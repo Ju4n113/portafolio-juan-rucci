@@ -1,6 +1,14 @@
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter2.svg";
-import meter3 from "../assets/img/meter3.svg";
+import meter1 from "../assets/img/Matlab_Logo.png";
+import meter2 from "../assets/img/aCad.png";
+import meter3 from "../assets/img/sketchUp.png";
+import meter4 from "../assets/img/smaart.png";
+import meter5 from "../assets/img/ease.png";
+import meter6 from "../assets/img/proTools.png";
+import meter7 from "../assets/img/python.png";
+import meter8 from "../assets/img/html.png";
+import meter9 from "../assets/img/css.png";
+import meter10 from "../assets/img/javaScript.png";
+import meter11 from "../assets/img/react.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import arrow1 from "../assets/img/arrow1.svg";
@@ -38,23 +46,23 @@ export const Skills = () => {
                         <p>Tuve la oportunidad de trabajar con varias herramientas y softwares que me permitieron llevar a cabo diversas tareas y proyectos. Entre los softwares que manejo con destreza se incluyen:</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>AutoCad</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter3} alt="Image" />
                                 <h5>SketchUp</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter4} alt="Image" />
                                 <h5>Smaart</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter5} alt="Image" />
                                 <h5>Ease</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter6} alt="Image" />
                                 <h5>ProTools</h5>
                             </div>
                             <div className="item">
@@ -62,23 +70,23 @@ export const Skills = () => {
                                 <h5>MatLab</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter7} alt="Image" />
                                 <h5>Programación en Python</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter8} alt="Image" />
                                 <h5>Html</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter9} alt="Image" />
                                 <h5>CSS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter10} alt="Image" />
                                 <h5>JavaScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter11} alt="Image" />
                                 <h5>React</h5>
                             </div>
                             

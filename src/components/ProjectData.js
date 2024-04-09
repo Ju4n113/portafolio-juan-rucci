@@ -5,6 +5,8 @@ import projectPdf from "../assets/pdfs/nicolo.pdf";
 import projectPdf2 from "../assets/pdfs/software.pdf";
 import projectPdf3 from "../assets/pdfs/control.pdf";
 
+import proj2Img1 from "../assets/img/infrasonido.png";
+import project2Pdf1 from "../assets/pdfs/infrasonido.pdf";
 
 const projects = [
   {
@@ -30,4 +32,16 @@ const projects = [
   // Resto de los proyectos...
 ];
 
-export default projects;
+// export default projects;
+
+const secondProjects = [
+  {
+    id: 1,
+    title: "Seminario de Infrasonido",
+    description: "Completé con éxito el seminario Infrasonido dictado por el prof. Dr José Ruzzante, adquiriendo conocimiento sobre la propagación, detección, fuentes e inconvenientes asociados con los infrasonidos.",
+    imgUrl: proj2Img1,
+    pdfUrl: project2Pdf1,
+  },
+];
+
+export { projects, secondProjects };

@@ -3,7 +3,9 @@ import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import projects from "./ProjectData.js";
+// import projects from "./ProjectData.js";
+import {projects, secondProjects } from './ProjectData.js';
+
 
 
 
@@ -59,6 +61,13 @@ export const Projects = () => {
                       <Tab.Pane eventKey="first">
                         <Row>
                           {projects.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+                      </Tab.Pane>
+                      <Tab.Pane eventKey="second">
+                        <Row>
+                          {secondProjects.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
                           })}
                         </Row>
