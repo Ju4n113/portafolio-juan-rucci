@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Col } from "react-bootstrap";
 import ProjectModal from "./ProjectModal";
 
-export const ProjectCard = ({ title, description, imgUrl, pdfUrl }) => {
+export const ProjectCard = ({ title, description, imgUrl, pdfUrl, iframeUrl }) => {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => setShowModal(true);
@@ -25,6 +25,7 @@ export const ProjectCard = ({ title, description, imgUrl, pdfUrl }) => {
           imgUrl={imgUrl}
           description={description}
           pdfUrl={pdfUrl}
+          iframeUrl={iframeUrl} // Pasamos la URL del iframe al ProjectModal
           onClose={closeModal}
         />
       )}
