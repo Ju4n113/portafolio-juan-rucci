@@ -1,0 +1,81 @@
+.project-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.733);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Asegura que el overlay esté por encima de todos los demás elementos */
+}
+
+.project-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%; /* Ajusta el ancho del modal según sea necesario */
+  max-height: 90%; /* Ajusta la altura del modal según sea necesario */
+  overflow: auto; /* Permite desplazamiento si el contenido es demasiado grande */
+  background-color: rgb(37, 37, 37);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10000; /* Asegura que el modal esté por encima del overlay y otros elementos */
+}
+  
+.project-modal-header {
+  text-align: center; /* Centra el contenido del header */
+  margin-bottom: 10px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.project-modal-header h3 {
+  margin: 0; /* Asegura que no haya espacio adicional alrededor del título */
+}
+
+.project-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+}
+
+.project-modal-content p {
+  text-align: center;
+  margin: 0; /* Asegura que no haya espacio adicional alrededor del párrafo */
+}
+
+.project-modal-content img {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  max-width: 50%;
+  max-height: auto;
+  margin-bottom: 10px; /* Espacio opcional entre la imagen y el párrafo */
+}
+
+.pdf-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 10px;
+}
