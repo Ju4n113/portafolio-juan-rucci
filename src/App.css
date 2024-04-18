@@ -237,7 +237,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-image: url('./assets/img/banner-bg.png');
   background-position: top center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;/* Altura fija del banner en píxeles */
 }
 .banner .tagline {
   font-weight: 700;
@@ -248,6 +248,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   margin-bottom: 16px;
   display: inline-block;
+
 }
 .banner h1 {
   font-size: 65px;
@@ -256,7 +257,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  height: 16rem;
 }
+
 .banner p {
   color: #f3f3f3;
   font-size: 18px;
@@ -420,7 +423,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  height: 100%;
+  /* background-color: #6666669c; */
 }
+
+.proj-imgbx img{
+  width: 100%; /* Ancho de la imagen al 100% del contenedor */
+  height: 100%; /* Altura de la imagen al 100% del contenedor */
+  object-fit: cover; /* Escala la imagen para que cubra todo el contenedor, manteniendo la relación de aspecto */
+}
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -617,4 +629,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    height: 26rem; /* Tamaño del h1 para pantallas pequeñas */
+  }
+}
+
+@media (min-width: 769px) and (max-height: 1200px) {
+  .banner h1 {
+    height: 28rem; /* Tamaño del h1 para pantallas medianas */
+  }
+}
+
+@media (min-width: 1201px) {
+  .banner h1 {
+    height: 16rem; /* Tamaño del h1 para pantallas grandes */
+  }
 }

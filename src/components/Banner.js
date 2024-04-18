@@ -5,6 +5,7 @@ import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -58,7 +59,7 @@ export const Banner = () => {
                 <span className="tagline">Gracias por visitar mi portafolio!</span>
                 <h1>{`Hola! Soy Juan Rucci`} <span className="txt-rotate" dataPeriod="1000" data-rotate='["Estudiante avanzado en Ingeniería de Sonido"]'><span className="wrap">{text}</span></span></h1>
                   <p>Valoro la dedicación tanto en el estudio como en el trabajo, otorgándoles siempre la importancia y responsabilidad que merecen. En el ámbito laboral, destaco por mi creatividad y proactividad, considerándolos fundamentales para alcanzar el éxito en equipo.</p>
-                  <button onClick={() => console.log('connect')}>Contactemonos <ArrowRightCircle size={25} /></button>
+                  {/* <button onClick={() => console.log('connect')}>Contactemonos <ArrowRightCircle size={25} /></button> */}
               </div>}
             </TrackVisibility>
           </Col>
