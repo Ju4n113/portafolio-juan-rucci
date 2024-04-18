@@ -1,19 +1,18 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/header-img.png";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(50); // Cambiar el valor de delta a 100
-  const [index, setIndex] = useState(1);
+  const [delta, setDelta] = useState(50); // Mantener la velocidad constante
   const toRotate = ["Estudiante avanzado en Ingeniería de Sonido"];
-  const period = 2000;
+  const period = 100;
+  const delayAfterWrite = 2000; // 2 segundos de retraso después de escribir
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -21,30 +20,27 @@ export const Banner = () => {
     }, delta);
 
     return () => { clearInterval(ticker) };
-  }, [text])
+  }, [text, delta]); // Agregar delta como dependencia para efecto de useEffect
 
   const tick = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
+
+    if (!isDeleting && text === fullText) {
+      setTimeout(() => {
+        setIsDeleting(true);
+        setDelta(period);
+      }, delayAfterWrite);
+    }
+
     let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
 
     setText(updatedText);
 
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
+    if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
+      setDelta(50); // Restaurar la velocidad constante
     }
   }
 
