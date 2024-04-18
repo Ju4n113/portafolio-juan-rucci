@@ -8,7 +8,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-// let cv = '../assets/pdfs/CV-RUCCI_JUAN_MARTIN.pdf';
+import cv from '../assets/pdfs/CV-RUCCI_JUAN_MARTIN.pdf'
 
 export const NavBar = () => {
 
@@ -54,7 +54,9 @@ export const NavBar = () => {
               <a href="https://www.linkedin.com/in/juanrucci" target="_blank" rel="noopener noreferrer">
                 <img src={navIcon1} alt="Icon" />
               </a>
-                {/* <a onClick={() => window.open(cv, "_blank")}><img src={navIcon3} alt="" /></a> */}
+              <button className="cv-button" onClick={() => window.open(cv, "_blank")}>
+              CV
+              </button>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Contacto</span></button>

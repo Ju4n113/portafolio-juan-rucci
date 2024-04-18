@@ -162,6 +162,7 @@ span.navbar-text {
 .social-icon a:hover img {
 	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
 }
+
 .navbar-text button {
   font-weight: 700;
   color: var(--white-color);
@@ -242,22 +243,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
 }
 
-.cv {
-  display: inline-block;
-  border: 2px solid var(--white-color);
-  padding: 0 20px;
-  line-height: 42px;
-  border-radius: 4px;
-  color: var(--white-color);
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
+.social-icon .cv-button {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 70px;
+  margin-right: 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.cv:hover {
+.social-icon .cv-button::before {
+  content: "";
+  width: 42px;
+  height: 42px;
+  position: absolute;
   background-color: var(--white-color);
-  color: var(--primary-color);
+  border-radius: 70px;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
 }
+
+.social-icon .cv-button:hover::before {
+  transform: scale(1);
+}
+
 
 /************ Banner Css ************/
 .banner {
