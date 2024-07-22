@@ -11,6 +11,7 @@ import cv from '../assets/pdfs/CV-RUCCI_JUAN_MARTIN.pdf';
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false); // Estado para el menú
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -21,12 +22,17 @@ export const NavBar = () => {
       } else {
         setScrolled(false);
       }
+      
+      // Cerrar el menú si está abierto y el usuario hace scroll
+      if (menuOpen) {
+        setMenuOpen(false);
+      }
     };
 
     window.addEventListener("scroll", onScroll);
 
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+  }, [menuOpen]); // Dependencia añadida para el estado del menú
 
   useEffect(() => {
     const path = location.pathname;
@@ -56,10 +62,13 @@ export const NavBar = () => {
         <Navbar.Brand as={Link} to="/" onClick={() => handleNavClick('home', '#home')}>
           <img src={logo} alt="Logo" />
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
+        <Navbar.Toggle 
+          aria-controls="basic-navbar-nav"
+          onClick={() => setMenuOpen(!menuOpen)} // Toggle el estado del menú
+        >
           <span className="navbar-toggler-icon"></span>
         </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
+        <Navbar.Collapse id="basic-navbar-nav" in={menuOpen}>
           <Nav className="ms-auto">
             <Nav.Link 
               as={Link} 

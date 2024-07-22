@@ -113,11 +113,7 @@ nav.navbar {
   z-index: 9999;
   transition:  0.32s ease-in-out;
 }
-@media (max-width: 768px) {
-  nav.navbar {
-    position: sticky; /* Tamaño del h1 para pantallas pequeñas */
-  }
-}
+
 
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -133,9 +129,11 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
   color: var(--white-color) !important;
   letter-spacing: 0.8px;
   padding: 0 25px;
-  font-size: 18px;
+  font-size: 20px;
   opacity: 0.75;
+  justify-content: center;
 }
+
 nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
 nav.navbar .navbar-nav a.nav-link.navbar-link.active {
     opacity: 1;
@@ -144,6 +142,7 @@ span.navbar-text {
     display: flex;
     align-items: center;
 }
+
 .social-icon {
     display: inline-block;
     margin-left: 14px;
@@ -291,7 +290,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transform: scale(1);
 }
 
+@media (max-width: 768px) {
+  nav.navbar {
+    position: fixed; /* Asegúrate de que el navbar permanezca en la parte superior */
+    background-color: var(--black-color); /* Fondo negro en pantallas pequeñas */
+  }
 
+  span.navbar-text {
+    flex-direction: column;
+  }
+
+}
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
@@ -412,6 +421,22 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+@media (max-width: 768px) {
+  .skill p {
+    color: var(--gray-color);
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    margin: 14px 0 15px 0;
+}
+
+.skill-slider .item img {
+  width: 25%;
+  margin: 0 auto 15px auto;
+}
+
 }
 
 /************ Projects Css ************/
@@ -721,7 +746,7 @@ margin: 0 30%;
 
 @media (max-width: 768px) {
   .banner h1 {
-    height: 26rem; /* Tamaño del h1 para pantallas pequeñas */
+    height: 30rem; /* Tamaño del h1 para pantallas pequeñas */
   }
 }
 
@@ -748,12 +773,6 @@ margin: 0 30%;
   padding: 13vh 0 0 0;
   background: radial-gradient(circle at center, #1a1a1d, #0d0d0f);
   overflow: hidden;
-}
-
-@media (max-width: 768px) {
-  .timeline-container {
-    padding: 0 0 0 0; /* Tamaño del h1 para pantallas pequeñas */
-  }
 }
 
 .timeline {
@@ -790,7 +809,7 @@ margin: 0 30%;
   display: flex;
   align-items: center;
   position: relative;
-  margin: 20px 0;
+  margin: 80px 0 20px 0;
   width: 100%;
   z-index: 1;
 }
@@ -910,4 +929,14 @@ margin: 0 30%;
 .timeline-item p {
   font-size: 18px;
   line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .timeline-container {
+    padding: 0 0 0 0; /* Tamaño del h1 para pantallas pequeñas */
+  }
+
+  .timeline-content {
+    padding: 15px;
+  }
 }

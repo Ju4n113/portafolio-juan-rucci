@@ -25,6 +25,15 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Juan Rucci - Portafolio</title>
+    <script>
+      // Añadir una ruta base para GitHub Pages
+      if (window.location.hostname === 'ju4n113.github.io') {
+        const head = document.head;
+        const base = document.createElement('base');
+        base.href = '/portafolio-juan-rucci/';
+        head.appendChild(base);
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

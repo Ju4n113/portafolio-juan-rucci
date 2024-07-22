@@ -29,7 +29,7 @@ const ProjectModal = ({ title, description, imgUrl, images, pdfUrl, iframeUrl, o
         ) : (
           imgUrl && <img src={imgUrl} alt={title} />
         )}
-        <p>{description}</p>
+        <p dangerouslySetInnerHTML={{ __html: description }}></p>
         {pdfUrl && (
           <div>
             <button className="pdf-button" onClick={() => window.open(pdfUrl, "_blank")}>
