@@ -43,6 +43,7 @@ import compre1 from '../assets/img/compre1.png';
 import compre2 from '../assets/img/compre2.png';
 import compre3 from '../assets/img/compre3.png';
 import compresor from '../assets/pdfs/compresor.pdf';
+import diplo1 from '../assets/img/diplo1.png';
 
 
 const timeLineData = [
@@ -176,6 +177,24 @@ const timeLineData = [
               iframeUrl: null,
             }
           },
+          {
+            year: 2023,
+            title: 'Diplomatura en Desarrollo Web Frontend',
+            description: `Realicé la Diplomatura en Desarrollo Web Frontend a través del programa Puentes del gobierno de la provincia de Buenos Aires, en colaboración entre la Universidad Nacional de Tres de Febrero y la Municipalidad de Ramallo.`,
+            imgSrc: diplo1,
+            modalContent: {
+                title: "Diplomatura en Desarrollo Web Frontend",
+                description: `En 2023, realicé la Diplomatura en Desarrollo Web Frontend a través del programa Puentes del gobierno de la provincia de Buenos Aires, en colaboración entre la Universidad Nacional de Tres de Febrero y la Municipalidad de Ramallo. Durante el curso, adquirí conocimientos en HTML, CSS, JavaScript y React, y los apliqué en tres trabajos integradores. <br>
+                - HTML y CSS: <a href="https://github.com/Ju4n113/proyecto_integrador" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a> | <a href="https://ju4n113.github.io/proyecto_integrador/" target="_blank" rel="noopener noreferrer">Visualizar proyecto</a> <br>
+                - JavaScript: <a href="https://github.com/Ju4n113/Proyecto_Integrador_Final" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a> | <a href="https://ju4n113.github.io/Proyecto_Integrador_Final/" target="_blank" rel="noopener noreferrer">Visualizar proyecto</a> <br>
+                - React: <a href="https://github.com/Ju4n113/Proyecto_integrador_final_React" target="_blank" rel="noopener noreferrer">Repositorio en GitHub</a> | <a href="https://ju4n113.github.io/Proyecto_integrador_final_React/" target="_blank" rel="noopener noreferrer">Visualizar proyecto</a> <br>
+                Fue una experiencia muy enriquecedora, y este mismo portafolio web no hubiera sido lo mismo sin las herramientas valiosas adquiridas en el mundo del diseño web, que ahora combino con mi carrera en Ingeniería de Sonido.`,
+                images: null,
+                pdfUrl: null,
+                iframeUrl: <iframe width="1250" height="703" src="https://www.youtube.com/embed/HyYldhJYfE4" title="Presentación de proyecto usando Figma." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
+            }
+        }
+        
     // Otros ítems...
   ];
   
