@@ -44,6 +44,14 @@ import compre2 from '../assets/img/compre2.png';
 import compre3 from '../assets/img/compre3.png';
 import compresor from '../assets/pdfs/compresor.pdf';
 import diplo1 from '../assets/img/diplo1.png';
+import infr from '../assets/img/infrasonido.png';
+import infrasonido from '../assets/pdfs/infrasonido.pdf';
+import dtac from '../assets/img/claseDtac.png';
+import dtac1 from '../assets/img/dtac1.jpeg';
+import dtac2 from '../assets/img/dtac2.jpeg';
+import dtac3 from '../assets/img/dtac3.jpeg';
+import dtac4 from '../assets/img/dtac4.jpeg';
+import dtac5 from '../assets/img/dtac5.jpeg';
 
 
 const timeLineData = [
@@ -163,21 +171,34 @@ const timeLineData = [
         pdfUrl: "",
         iframeUrl: null,
         }
-        },
-        { 
-            year: 2022, 
-            title: 'Diseño de compresor de dos canales en Altium', 
-            description: `Para el proyecto final de Circuitos Electrónicos II, diseñé un compresor de dos canales usando Altium, adaptado para un rack de un solo módulo.`,
-            imgSrc: compre2,
-            modalContent: {
-              title: "Diseño de compresor de dos canales en Altium",
-              description: `Como proyecto final para la materia Circuitos Electrónicos II, diseñé un compresor de dos canales en el software Altium, adaptándolo para un espacio de rack de un solo módulo. Partiendo de un circuito proporcionado por el profesor, utilicé Altium, un software de automatización de diseño electrónico para ingenieros, para el diseño de la placa de circuito impreso, aprendiendo a manejar el software en el proceso. Quisiera destacar que la finalización de este proyecto no hubiera sido posible sin la ayuda y el compañerismo de <a href="https://www.linkedin.com/in/leandro-bilbao/" target="_blank" rel="noopener noreferrer">Leandro Bilbao</a>, quien aportó un conocimiento y una organización excepcionales en el uso de Altium.`,
-              images: [compre1, compre2, compre3],
-              pdfUrl: compresor,
-              iframeUrl: null,
-            }
-          },
-          {
+    },
+    { 
+        year: 2021, 
+        title: 'Ayudante de Dibujo Técnico Asistido por Computadora', 
+        description: `Durante el segundo cuatrimestre de 2021, comencé como ayudante de cátedra en la materia Dibujo Técnico Asistido por Computadora.`,
+        imgSrc: dtac,
+        modalContent: {
+          title: "Clase de Dibujo Técnico",
+          description: `Durante el segundo cuatrimestre de 2021, comencé como ayudante de cátedra en la materia Dibujo Técnico Asistido por Computadora, rol que desempeñé hasta diciembre de 2023. Mis tareas incluyeron la corrección de las distintas láminas presentadas durante la cursada, así como brindar apoyo a alumnos y profesores. Comparto a continuación un fragmento donde explico una aplicación práctica de los temas discutidos hasta la fecha.`,
+          images: [dtac, dtac2, dtac3, dtac4, dtac5,],  // Aquí puedes poner un array con la imagen principal
+          pdfUrl: "",
+          iframeUrl: <iframe width="866" height="487" src="https://www.youtube.com/embed/y2VKRNF3uik" title="claseDtac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,  // No hay iframe en este proyecto
+        }
+      },
+    { 
+        year: 2022, 
+        title: 'Diseño de compresor de dos canales en Altium', 
+        description: `Para el proyecto final de Circuitos Electrónicos II, diseñé un compresor de dos canales usando Altium, adaptado para un rack de un solo módulo.`,
+        imgSrc: compre2,
+        modalContent: {
+            title: "Diseño de compresor de dos canales en Altium",
+            description: `Como proyecto final para la materia Circuitos Electrónicos II, diseñé un compresor de dos canales en el software Altium, adaptándolo para un espacio de rack de un solo módulo. Partiendo de un circuito proporcionado por el profesor, utilicé Altium, un software de automatización de diseño electrónico para ingenieros, para el diseño de la placa de circuito impreso, aprendiendo a manejar el software en el proceso. Quisiera destacar que la finalización de este proyecto no hubiera sido posible sin la ayuda y el compañerismo de <a href="https://www.linkedin.com/in/leandro-bilbao/" target="_blank" rel="noopener noreferrer">Leandro Bilbao</a>, quien aportó un conocimiento y una organización excepcionales en el uso de Altium.`,
+            images: [compre1, compre2, compre3],
+            pdfUrl: compresor,
+            iframeUrl: null,
+        }
+    },
+    {
             year: 2023,
             title: 'Diplomatura en Desarrollo Web Frontend',
             description: `Realicé la Diplomatura en Desarrollo Web Frontend a través del programa Puentes del gobierno de la provincia de Buenos Aires, en colaboración entre la Universidad Nacional de Tres de Febrero y la Municipalidad de Ramallo.`,
@@ -193,8 +214,21 @@ const timeLineData = [
                 pdfUrl: null,
                 iframeUrl: <iframe width="1250" height="703" src="https://www.youtube.com/embed/HyYldhJYfE4" title="Presentación de proyecto usando Figma." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,
             }
+    },
+    {
+        year: 2023,
+        title: 'Seminario de Infrasonido',
+        description: `Completé con éxito el seminario Infrasonido dictado por el prof. Dr José Ruzzante, adquiriendo conocimiento sobre la propagación, detección, fuentes e inconvenientes asociados con los infrasonidos.`,
+        imgSrc: infr,
+        modalContent: {
+            title: "Seminario de Infrasonido",
+            description: `Completé con éxito el seminario Infrasonido dictado por el prof. Dr José Ruzzante, adquiriendo conocimiento sobre la propagación, detección, fuentes e inconvenientes asociados con los infrasonidos.`,
+            images: null,
+            pdfUrl: infrasonido,
+            iframeUrl: null,
         }
-        
+    },
+    
     // Otros ítems...
   ];
   
