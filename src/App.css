@@ -216,6 +216,27 @@ span.navbar-text {
 	height: 100%;
 	position: absolute;
 }
+/* Define la animación de rebote */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/* Aplica la animación al navbar-toggler */
+nav.navbar .navbar-toggler {
+  animation: bounce 0.6s ease;
+}
 nav.navbar .navbar-toggler:active,
 nav.navbar .navbar-toggler:focus {
 	outline: none;
@@ -294,12 +315,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   nav.navbar {
     position: fixed; /* Asegúrate de que el navbar permanezca en la parte superior */
     background-color: var(--black-color); /* Fondo negro en pantallas pequeñas */
+    padding: 22px 0;
   }
 
   span.navbar-text {
     flex-direction: column;
   }
 
+  nav.navbar .container {
+    justify-content: space-around;
+  }
 }
 /************ Banner Css ************/
 .banner {
@@ -312,7 +337,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 @media (max-width: 768px) {
   .banner {
-    padding: 60px 0 100px 0; /* Tamaño del h1 para pantallas pequeñas */
+    padding: 80px 0 100px 0; /* Tamaño del h1 para pantallas pequeñas */
     }
   }
 
