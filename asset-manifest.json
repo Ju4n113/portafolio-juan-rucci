@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portafolio-juan-rucci/static/css/main.33534f37.css",
-    "main.js": "/portafolio-juan-rucci/static/js/main.1b2c0537.js",
+    "main.css": "/portafolio-juan-rucci/static/css/main.01e5171b.css",
+    "main.js": "/portafolio-juan-rucci/static/js/main.3279a6ba.js",
     "static/js/453.298f5782.chunk.js": "/portafolio-juan-rucci/static/js/453.298f5782.chunk.js",
     "static/media/control.pdf": "/portafolio-juan-rucci/static/media/control.0a7bb1c5a684a3749e55.pdf",
     "static/media/software.pdf": "/portafolio-juan-rucci/static/media/software.8159bce1faa7c2642f83.pdf",
@@ -30,6 +30,7 @@
     "static/media/compre2.png": "/portafolio-juan-rucci/static/media/compre2.26cff830f6c0bc1161ee.png",
     "static/media/compre3.png": "/portafolio-juan-rucci/static/media/compre3.e0a234a0f63175fd5ae1.png",
     "static/media/sounding5.JPEG": "/portafolio-juan-rucci/static/media/sounding5.bd6123b97c7f564c6c96.JPEG",
+    "static/media/freelan.png": "/portafolio-juan-rucci/static/media/freelan.56806e08e7dd0b30e13b.png",
     "static/media/portadaSoftware.png": "/portafolio-juan-rucci/static/media/portadaSoftware.632c59837feeb3e37fb2.png",
     "static/media/Matlab_Logo.png": "/portafolio-juan-rucci/static/media/Matlab_Logo.4aad1a3d3b4abc9ea503.png",
     "static/media/sounding6.JPEG": "/portafolio-juan-rucci/static/media/sounding6.1efeecc13dc6de98ae48.JPEG",
@@ -91,12 +92,12 @@
     "static/media/arrow2.svg": "/portafolio-juan-rucci/static/media/arrow2.b3d03e1b04ec1904a5658aea5776433c.svg",
     "static/media/arrow1.svg": "/portafolio-juan-rucci/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
     "static/media/nav-icon2.svg": "/portafolio-juan-rucci/static/media/nav-icon2.a39f0e5e47e442dafcc5c9c320f19f6f.svg",
-    "main.33534f37.css.map": "/portafolio-juan-rucci/static/css/main.33534f37.css.map",
-    "main.1b2c0537.js.map": "/portafolio-juan-rucci/static/js/main.1b2c0537.js.map",
+    "main.01e5171b.css.map": "/portafolio-juan-rucci/static/css/main.01e5171b.css.map",
+    "main.3279a6ba.js.map": "/portafolio-juan-rucci/static/js/main.3279a6ba.js.map",
     "453.298f5782.chunk.js.map": "/portafolio-juan-rucci/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.33534f37.css",
-    "static/js/main.1b2c0537.js"
+    "static/css/main.01e5171b.css",
+    "static/js/main.3279a6ba.js"
   ]
 }
