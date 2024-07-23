@@ -417,7 +417,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background: var(--black-color);
   border-radius: 64px;
   text-align: center;
-  padding: 60px 50px;
+  padding: 5px 0;
   margin-top: -60px;
 }
 .skill h2 {
@@ -429,12 +429,13 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
-    margin: 14px 0 75px 0;
+    margin: 3px ;
 }
 .skill-slider {
   width: 80%;
   margin: 0 auto;
   position: relative;
+  display: flex;
 }
 .skill-slider .item img {
   width: 50%;
@@ -449,6 +450,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 @media (max-width: 768px) {
+  .skill-bx {
+    margin-top: 0px;
+  }
+
   .skill p {
     color: var(--gray-color);
     font-size: 18px;
@@ -606,7 +611,46 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.project-grid-item {
+  height: 300px; /* Altura fija para todas las tarjetas */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Asegúrate de que el contenido no se desborde */
+}
+
+.project-grid-item img {
+  max-height: 100%;
+  object-fit: cover;
+  width: 100%; /* Asegura que las imágenes ocupen todo el ancho del contenedor */
+}
+
+.project-card {
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center; */
+  /* align-items: center; */
+  height: 100%;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+@media (max-width: 768px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+/************ Contact Css ************/
 .contact {
   background: linear-gradient(90.21deg, var(--primary-color) -5.91%, var(--secondary-color) 111.58%);
   padding: 60px 0 200px 0;
@@ -813,7 +857,7 @@ margin: 0 30%;
   position: absolute;
   width: 4px;
   background: linear-gradient(180deg, #89db64b5, #053b05d2);
-  top: 0;
+  top: 30px;
   bottom: 0;
   left: 50%;
   margin-left: -2px;
@@ -957,6 +1001,10 @@ margin: 0 30%;
 }
 
 @media (max-width: 768px) {
+  .timeline {
+    top: 6.5rem;
+  }
+
   .timeline-container {
     padding: 0 0 0 0; /* Tamaño del h1 para pantallas pequeñas */
   }
@@ -965,3 +1013,53 @@ margin: 0 30%;
     padding: 15px;
   }
 }
+
+.timeline-buttons {
+  position: absolute; 
+  top: 115px; /* Ajusta según el alto del navbar */
+  left: 0;
+  width: 100%;
+  background-color: #0e0e10; /* Color de fondo igual al del navbar */
+  z-index: 10; /* Asegúrate de que los botones estén por encima del contenido del timeline */
+  display: flex;
+  justify-content: space-around; /* Distribuye los botones a lo largo del ancho */
+  gap: 10px; /* Espacio entre los botones */
+  padding: 10px 0; /* Espacio arriba y abajo de los botones */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Opcional: sombra para un efecto de separación */
+}
+
+.timeline-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: var(--white-color);
+  background-color: #0e0e10;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  flex: 1; /* Asegura que los botones se expandan igualmente */
+}
+
+.timeline-buttons button:hover {
+  background-color: var(--secondary-color);
+}
+
+.timeline-buttons button.active {
+  background-color: var(--secondary-color); /* Color cuando está seleccionado */
+  color: var(--white-color); /* Color del texto cuando está seleccionado */
+}
+
+@media (max-width: 768px) {
+  .timeline-buttons {
+    top: 70px;
+    background-color: #252525;
+  }
+
+  .timeline-buttons button{
+    font-size: 12px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+  }
+}
+

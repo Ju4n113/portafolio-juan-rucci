@@ -52,6 +52,13 @@ import dtac2 from '../assets/img/dtac2.jpeg';
 import dtac3 from '../assets/img/dtac3.jpeg';
 import dtac4 from '../assets/img/dtac4.jpeg';
 import dtac5 from '../assets/img/dtac5.jpeg';
+import projImg1 from "../assets/img/portadaNicolo.png";
+import projImg2 from "../assets/img/portadaSoftware.png";
+import projImg3 from "../assets/img/portadaControl.png";
+import projectPdf from "../assets/pdfs/nicolo.pdf";
+import projectPdf2 from "../assets/pdfs/software.pdf";
+import projectPdf3 from "../assets/pdfs/control.pdf";
+import freelan from "../assets/img/freelan.png";
 
 
 const timeLineData = [
@@ -60,6 +67,8 @@ const timeLineData = [
     title: 'Dúo Martinez-Rucci', 
     description: 'Dúo de cámara integrado por Catalina Martínez - Soprano y yo como pianista.', 
     imgSrc: casam2,
+    categories: ['Experiencia Laboral'],
+    type: 'secondProject',
     modalContent: {
         title: "Dúo Martinez-Rucci",
         description: "Formé parte de un dúo de cámara con Catalina Martínez, soprano, con el que hemos tocado en diversos casamientos, ofreciendo un toque especial a cada celebración.",
@@ -73,6 +82,7 @@ const timeLineData = [
     title: 'Festival Non Stop - Tinto y La Sangre', 
     description: 'Presentación en el Festival Non Stop en Ramallo, provincia de Buenos Aires, donde interpretamos "Año de peste" con la banda "El Tinto y La Sangre" de la que fuí pianista.', 
     imgSrc: tintoYLaSangre,
+    categories: ['Personal'],
     modalContent: {
         title: "Festival Non Stop - Tinto y La Sangre",
         description: `Fuí pianista de la banda "El Tinto y La Sangre", una formación liderada por Omar "Tinto" Cartier, junto a Albano González Cartier en la batería, Juan Manuel Franzia en el bajo y Sebastian Hattemer en la guitarra eléctrica. Uno de nuestros momentos destacados fue la presentación en el Festival Non Stop en Ramallo, provincia de Buenos Aires, donde interpretamos "Año de peste", una canción con letra de Omar Cartier y música de Edgardo Gonzalez y Gustavo Girves, dedicada a los caídos en la guerra de Malvinas.`,
@@ -86,6 +96,8 @@ const timeLineData = [
         title: 'Pasante en Loma Negra SA ', 
         description: 'Entre Junio de 2016 y Agosto de 2016 realicé una pasantía en Loma Negra SA.', 
         imgSrc: lomaNegra1,
+        categories: ['Experiencia Laboral'],
+        type: 'secondProject',
         modalContent: {
             title: "Pasante en Loma Negra SA ",
             description: `Durante mi último año de la escuela secundaria técnica, tuve la oportunidad de realizar prácticas profesionales en Loma Negra SA. Durante esta pasantía, participé en diversas tareas tanto de campo como administrativas, adquiriendo valiosa experiencia y habilidades prácticas. Mis responsabilidades incluyeron: mediciones de grosor de tolvas, relevamiento de materiales en disposición, ejecución de diversas tareas administrativas, entre otras.`,
@@ -99,6 +111,7 @@ const timeLineData = [
         title: 'Ingeniería de Sonido', 
         description: 'Comienzo la carrera de Ingeniería de Sonido en la Universidad Nacional de Tres de Febrero.', 
         imgSrc: iSon4,
+        categories: ['Ingenieria de Sonido', 'Personal', 'Estudios'],
         modalContent: {
             title: "Ingeniería de Sonido",
             description: "Con gran entusiasmo, me mudé a Caseros, en la provincia de Buenos Aires, para iniciar mis estudios en la carrera de Ingeniería de Sonido.",
@@ -112,6 +125,8 @@ const timeLineData = [
         title: 'Estudios Panda', 
         description: 'Para la materia Grabación I, dictada por Amílcar Gilabert, cursamos en el mítico Estudio Panda, donde grabaron grandes artistas como Charly García', 
         imgSrc: panda3,
+        categories: ['Ingenieria de Sonido'],
+        type: 'project',
         modalContent: {
             title: "Estudios Panda",
             description: "Para la materia Grabación I, dictada por Amílcar Gilabert, cursamos gran parte en el mítico Estudio Panda, ubicado en el barrio de Floresta, sobre la Avenida Segurola. Este estudio es conocido por haber sido el escenario de grabación de algunos de los discos más importantes de las últimas décadas, tanto nacionales como internacionales. Entre los artistas que han trabajado allí se encuentran Charly García, Los Twist, Soda Stereo, Andrés Calamaro, Fito Páez, Sumo, Los Fabulosos Cadillacs, Los Redondos y Babasónicos.",
@@ -125,6 +140,8 @@ const timeLineData = [
         title: 'Modos de vibraciones en una placa', 
         description: 'Para la materia Acústica y Psicoacústica I se estudiaron los modos de vibración en una placa cuadrada, basándose en el método de Chladni.', 
         imgSrc: vibr2,
+        categories: ['Ingenieria de Sonido'],
+        type: 'project',
         modalContent: {
             title: "Modos de vibraciones en una placa",
             description: "Para la materia Acústica y Psicoacústica I, dictada por el Ing. de Sonido Mariano Arouxet, se estudiaron los modos de vibración en una placa cuadrada, basándose en el método de Chladni. Al excitar la placa, se observaron simetrías en las figuras generadas para cada modo de vibración. Estas simetrías dependen de la geometría, las condiciones de borde y las fuerzas aplicadas. Las placas cuadradas o circulares y homogéneas con bordes restringidos en puntos o líneas específicas permiten visualizar estos modos. La excitación se realiza desde el centro, usando un tornillo conectado a un shaker o mediante golpes mecánicos.",
@@ -138,6 +155,8 @@ const timeLineData = [
         title: 'Estudio de grabación SoundING', 
         description: 'Para la materia Grabación II, dictada por Daniel Osorio, tuvimos la posibilidad de cursar gran parte de la materia en el estudio de grabación SoundING.', 
         imgSrc: sounding3,
+        categories: ['Ingenieria de Sonido'],
+        type: 'project',
         modalContent: {
             title: "Estudio de grabación SoundING",
             description: "Para la materia Grabación II, dictada por Daniel Osorio, tuvimos la posibilidad de cursar gran parte de la materia en el estudio de grabación SoundING. Allí, estuve en contacto con equipos de grabación y edición de sonido avanzados, los utilicé y aprendí de los profesores y ayudantes de cátedra.",
@@ -151,6 +170,8 @@ const timeLineData = [
         title: 'Fuente partida regulada variable', 
         description: 'En la materia Laboratorio de Electrónica I, aprendí a construir circuitos y soldar componentes. Un proyecto destacado fue una Fuente Partida Regulada Variable, que utilicé en futuros trabajos académicos y proyectos personales.', 
         imgSrc: fuente5,
+        categories: ['Ingenieria de Sonido'],
+        type: 'project',
         modalContent: {
         title: "Fuente partida regulada variable",
         description: "Para la materia Laboratorio de Electrónica I, me introduje en la construcción de circuitos electrónicos y el soldado de componentes. Como parte de uno de los trabajos, construí una Fuente Partida Regulada Variable, que no solo fue esencial para futuros proyectos académicos, sino también para mis propios proyectos personales, brindándome una valiosa herramienta práctica.",
@@ -159,11 +180,27 @@ const timeLineData = [
         iframeUrl: null,
         }
     },
+    {
+        year: 2020,
+        title: "Trabajo Remoto Durante la Pandemia",
+        description: "Durante la pandemia en 2020, realicé algunos trabajos de manera remota. Entre ellos, eliminé ruido de audios para un podcast y participé en estudios subjetivos de calidad de imágenes y video.",
+        imgSrc: freelan,
+        categories: ['Experiencia Laboral'],
+        type: 'secondProject',
+        modalContent: {
+            title: "Trabajo Remoto Durante la Pandemia",
+            description: `Durante la pandemia en 2020, me dediqué a realizar trabajos de manera remota. Entre los proyectos que llevé a cabo, destacaron la eliminación de ruido de audios para un podcast, mejorando la claridad y calidad del sonido, y la participación en estudios subjetivos de calidad de imágenes y video. Para conocer más sobre estos trabajos y explorar otros proyectos, puedes visitar mi perfil en <a href="https://www.freelancer.com/u/ju4n113" target="_blank" rel="noopener noreferrer">Freelancer</a>.`,
+            images: null,
+            pdfUrl: null,
+            iframeUrl: null, // Aquí se agrega el iframe
+        },
+    },
     { 
         year: 2021, 
         title: 'Distorsión para guitarra', 
         description: 'Construcción de un efecto de distorsión para guitarra.', 
         imgSrc: distor2,
+        categories: ['Ingenieria de Sonido'],
         modalContent: {
         title: "Distorsión para guitarra",
         description: "Para la materia Laboratorio de Electrónica II, construí como proyecto final un efecto de distorsión para guitarra alimentado por una batería de 9V.",
@@ -177,19 +214,23 @@ const timeLineData = [
         title: 'Ayudante de Dibujo Técnico Asistido por Computadora', 
         description: `Durante el segundo cuatrimestre de 2021, comencé como ayudante de cátedra en la materia Dibujo Técnico Asistido por Computadora.`,
         imgSrc: dtac,
+        categories: ['Ingenieria de Sonido', 'Personal', 'Experiencia Laboral'],
+        type: 'secondProject',
         modalContent: {
-          title: "Clase de Dibujo Técnico",
-          description: `Durante el segundo cuatrimestre de 2021, comencé como ayudante de cátedra en la materia Dibujo Técnico Asistido por Computadora, rol que desempeñé hasta diciembre de 2023. Mis tareas incluyeron la corrección de las distintas láminas presentadas durante la cursada, así como brindar apoyo a alumnos y profesores. Comparto a continuación un fragmento donde explico una aplicación práctica de los temas discutidos hasta la fecha.`,
-          images: [dtac, dtac2, dtac3, dtac4, dtac5,],  // Aquí puedes poner un array con la imagen principal
-          pdfUrl: "",
+        title: "Clase de Dibujo Técnico",
+        description: `Durante el segundo cuatrimestre de 2021, comencé como ayudante de cátedra en la materia Dibujo Técnico Asistido por Computadora, rol que desempeñé hasta diciembre de 2023. Mis tareas incluyeron la corrección de las distintas láminas presentadas durante la cursada, así como brindar apoyo a alumnos y profesores. Comparto a continuación un fragmento donde explico una aplicación práctica de los temas discutidos hasta la fecha.`,
+          images: [dtac, dtac1, dtac2, dtac3, dtac4, dtac5,],  // Aquí puedes poner un array con la imagen principal
+        pdfUrl: "",
           iframeUrl: <iframe width="866" height="487" src="https://www.youtube.com/embed/y2VKRNF3uik" title="claseDtac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>,  // No hay iframe en este proyecto
         }
-      },
+    },
     { 
         year: 2022, 
         title: 'Diseño de compresor de dos canales en Altium', 
         description: `Para el proyecto final de Circuitos Electrónicos II, diseñé un compresor de dos canales usando Altium, adaptado para un rack de un solo módulo.`,
         imgSrc: compre2,
+        categories: ['Ingenieria de Sonido'],
+        type: 'project',
         modalContent: {
             title: "Diseño de compresor de dos canales en Altium",
             description: `Como proyecto final para la materia Circuitos Electrónicos II, diseñé un compresor de dos canales en el software Altium, adaptándolo para un espacio de rack de un solo módulo. Partiendo de un circuito proporcionado por el profesor, utilicé Altium, un software de automatización de diseño electrónico para ingenieros, para el diseño de la placa de circuito impreso, aprendiendo a manejar el software en el proceso. Quisiera destacar que la finalización de este proyecto no hubiera sido posible sin la ayuda y el compañerismo de <a href="https://www.linkedin.com/in/leandro-bilbao/" target="_blank" rel="noopener noreferrer">Leandro Bilbao</a>, quien aportó un conocimiento y una organización excepcionales en el uso de Altium.`,
@@ -203,6 +244,8 @@ const timeLineData = [
             title: 'Diplomatura en Desarrollo Web Frontend',
             description: `Realicé la Diplomatura en Desarrollo Web Frontend a través del programa Puentes del gobierno de la provincia de Buenos Aires, en colaboración entre la Universidad Nacional de Tres de Febrero y la Municipalidad de Ramallo.`,
             imgSrc: diplo1,
+            categories: ['Estudios'],
+            type: 'thirdProject',
             modalContent: {
                 title: "Diplomatura en Desarrollo Web Frontend",
                 description: `En 2023, realicé la Diplomatura en Desarrollo Web Frontend a través del programa Puentes del gobierno de la provincia de Buenos Aires, en colaboración entre la Universidad Nacional de Tres de Febrero y la Municipalidad de Ramallo. Durante el curso, adquirí conocimientos en HTML, CSS, JavaScript y React, y los apliqué en tres trabajos integradores. <br>
@@ -220,6 +263,8 @@ const timeLineData = [
         title: 'Seminario de Infrasonido',
         description: `Completé con éxito el seminario Infrasonido dictado por el prof. Dr José Ruzzante, adquiriendo conocimiento sobre la propagación, detección, fuentes e inconvenientes asociados con los infrasonidos.`,
         imgSrc: infr,
+        categories: ['Estudios'],
+        type: 'thirdProject',
         modalContent: {
             title: "Seminario de Infrasonido",
             description: `Completé con éxito el seminario Infrasonido dictado por el prof. Dr José Ruzzante, adquiriendo conocimiento sobre la propagación, detección, fuentes e inconvenientes asociados con los infrasonidos.`,
@@ -228,9 +273,53 @@ const timeLineData = [
             iframeUrl: null,
         }
     },
-    
+    {
+        year: 2023,
+        title: "Modelado geométrico y acústico del auditorio Niccolo Paganini",
+        description: "Para la materia Instrumentos y Mediciones Acústicas (IMA), se realizó un análisis detallado del modelado geométrico y acústico del auditorio Niccolò Paganini en Parma, Italia, utilizando el software EASE.",
+        imgSrc: projImg1,
+        categories: ['Ingeniería de Sonido'],
+        type: 'project',
+        modalContent: {
+            title: "Modelado geométrico y acústico del auditorio Niccolo Paganini",
+            description: "Este artículo presenta un análisis detallado del modelado geométrico y acústico del auditorio Niccolo Paganini en Parma, Italia, utilizando el software EASE. El software EASE (Enhanced Acoustic Simulator for Engineers) es una herramienta utilizada para el diseño, análisis y simulación acústica de recintos. Permite crear modelos geométricos detallados y realizar simulaciones acústicas para evaluar la distribución del sonido, la reverberación y otros parámetros acústicos en espacios como auditorios, teatros y salas de conciertos. El modelado geométrico y acústico es esencial para optimizar la calidad del sonido y garantizar una acústica adecuada en estos entornos. Se compararon los parámetros acústicos calculados con mediciones in situ, revelando diferencias notables en varios aspectos, como T20, T30 y STI.",
+            images: null,
+            pdfUrl: projectPdf,
+            iframeUrl: null, // No hay iframe en este proyecto
+        }
+    },
+    {
+        year: 2023,
+        title: "Desarrollo de un software para procesamiento de RIR's",
+        description: "Para la materia IMA, se desarrolló un programa informático en Python para calcular parámetros acústicos de salas, incluyendo respuestas al impulso monofónicas y estereofónicas.",
+        imgSrc: projImg2,
+        categories: ['Ingeniería de Sonido'],
+        type: 'project',
+        modalContent: {
+            title: "Desarrollo de un software para procesamiento de RIR's",
+            description: "Este artículo detalla el desarrollo de un programa informático en Python para calcular parámetros acústicos de salas, incluyendo respuestas al impulso monofónicas y estereofónicas. La respuesta al impulso es una representación de cómo un sistema, como una sala o un equipo de audio, responde a un impulso sonoro. Un impulso es un sonido breve y de alta amplitud, similar a un golpe seco. La respuesta al impulso muestra cómo el sonido se refleja, difunde y se absorbe en el espacio a lo largo del tiempo. Este análisis es crucial para entender las características acústicas de una sala y permite calcular parámetros como el tiempo de reverberación, la claridad y la inteligibilidad del habla.",
+            images: null,
+            pdfUrl: projectPdf2,
+            iframeUrl: null, // No hay iframe en este proyecto
+        }
+    },
+    {
+        year: 2023,
+        title: "Diseño de un Control Room",
+        description: "Para la materia IMA, diseñamos un control room de tipo anecoico para un estudio de grabación, combinando estructuras de tipo domo y con capacidad para cinco personas. Este recinto está equipado con un sistema de monitoreo multicanal 3D y un sistema binaural.",
+        imgSrc: projImg3,
+        categories: ['Ingeniería de Sonido'],
+        type: 'project',
+        modalContent: {
+            title: "Diseño de un Control Room",
+            description: "Diseño de un control room de tipo ambechoic para un estudio de grabación, el cual cuenta con espacio para un total de 5 personas trabajando en su interior. En el recinto se instala un sistema de monitoreo multicanal 3D y un sistema binaural.",
+            images: null,
+            pdfUrl: projectPdf3,
+            iframeUrl: null, // Aquí se agrega el iframe
+        },
+    },
     // Otros ítems...
-  ];
-  
-  export default timeLineData;
-  
+];
+
+export default timeLineData;
+

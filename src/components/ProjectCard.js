@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Col } from "react-bootstrap";
 import ProjectModal from "./ProjectModal";
 
-export const ProjectCard = ({ title, description, imgUrl, pdfUrl, iframeUrl }) => {
+export const ProjectCard = ({ title, description, imgSrc, modalContent }) => {
   const [showModal, setShowModal] = useState(false);
 
   const openModal = () => setShowModal(true);
@@ -10,22 +9,23 @@ export const ProjectCard = ({ title, description, imgUrl, pdfUrl, iframeUrl }) =
 
   return (
     <>
-      <Col xs={12} sm={6} md={4}>
-        <div className="proj-imgbx" onClick={openModal}>
-          <img src={imgUrl} alt={title} />
+      <div className="project-card" onClick={openModal}>
+        <div className="proj-imgbx">
+          <img src={imgSrc} alt={title} />
           <div className="proj-txtx">
             <h4>{title}</h4>
             <span>{description}</span>
           </div>
         </div>
-      </Col>
+      </div>
       {showModal && (
         <ProjectModal
           title={title}
-          imgUrl={imgUrl}
-          description={description}
-          pdfUrl={pdfUrl}
-          iframeUrl={iframeUrl} // Pasamos la URL del iframe al ProjectModal
+          imgUrl={imgSrc}
+          images={modalContent.images}
+          description={modalContent.description}
+          pdfUrl={modalContent.pdfUrl}
+          iframeUrl={modalContent.iframeUrl} // Pasamos la URL del iframe al ProjectModal
           onClose={closeModal}
         />
       )}

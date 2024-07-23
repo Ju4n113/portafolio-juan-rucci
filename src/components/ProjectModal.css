@@ -116,3 +116,6 @@
     max-width: 90%; /* Aumenta el tamaño de las imágenes para pantallas pequeñas */
   }
 }
+.modal-open {
+  overflow: hidden;
+}

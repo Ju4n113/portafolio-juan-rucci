@@ -1,11 +1,10 @@
-// TimeLine.js
-
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import TimeLineItem from './TimeLineItem';
-import '../App.css';  // Agrega estilos personalizados aquí
+import '../App.css';  // Asegúrate de que el archivo CSS esté importado
 import timeLineData from './timeLineData';  // Importa los datos desde el nuevo archivo
 
 const TimeLine = () => {
+  const [selectedCategory, setSelectedCategory] = useState('Todos'); // Estado para la categoría seleccionada
 
   useEffect(() => {
     const timeline = document.querySelector('.timeline');
@@ -16,7 +15,7 @@ const TimeLine = () => {
       timeline.style.background = `linear-gradient(${angle}deg, var(--primary-color) 15%, var(--secondary-color) 125%)`;
     }
 
-    const duration = 45000; // Duración total del ciclo en milisegundos (30 segundos)
+    const duration = 45000; // Duración total del ciclo en milisegundos (45 segundos)
     const interval = duration / 360; // Intervalo de tiempo para cada grado de rotación
 
     const timer = setInterval(rotateGradient, interval);
@@ -26,10 +25,26 @@ const TimeLine = () => {
     };
   }, []); // El segundo argumento [] asegura que useEffect se ejecute solo una vez al montar el componente
 
+  // Filtra los datos según la categoría seleccionada
+  const filteredData = selectedCategory === 'Todos' 
+    ? timeLineData 
+    : timeLineData.filter(item => item.categories.includes(selectedCategory));
+
   return (
     <div className="timeline-container">
+      <div className="timeline-buttons">
+        {['Todos', 'Experiencia Laboral', 'Estudios', 'Ingenieria de Sonido', 'Personal'].map(category => (
+          <button
+            key={category}
+            className={selectedCategory === category ? 'active' : ''}
+            onClick={() => setSelectedCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
       <div className="timeline">
-        {timeLineData.map((item, index) => (
+        {filteredData.map((item, index) => (
           <TimeLineItem
             key={index}
             year={item.year}

@@ -9,6 +9,7 @@ import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
 import { Contact } from "./components/Contact";
 import TimeLine from './components/TimeLine';
+import VideoSection from './components/Presentation';
 import { Footer } from "./components/Footer";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Banner />
               <Skills />
               <Projects />
+              <VideoSection />
               <Contact />
             </>
           } />

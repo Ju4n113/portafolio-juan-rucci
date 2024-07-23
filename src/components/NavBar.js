@@ -4,7 +4,6 @@ import logo from '../assets/img/logo.svg';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.png';
-import { HashLink } from 'react-router-hash-link';
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import cv from '../assets/pdfs/CV-RUCCI_JUAN_MARTIN.pdf';
 
@@ -53,8 +52,13 @@ export const NavBar = () => {
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
       }
+      else {
+        // Desplazarse a la parte superior si ya estás en la página de timeline
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }, 100);
   };
+
 
   return (
     <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -89,6 +93,12 @@ export const NavBar = () => {
               onClick={() => handleNavClick('projects', '#projects')}
             >
               Proyectos
+            </Nav.Link>
+            <Nav.Link 
+              className={activeLink === 'presentation' ? 'active navbar-link' : 'navbar-link'} 
+              onClick={() => handleNavClick('presentation', '#presentation')}
+            >
+              Presentación
             </Nav.Link>
             <Nav.Link 
               as={Link} 

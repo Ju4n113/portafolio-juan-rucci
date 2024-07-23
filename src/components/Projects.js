@@ -3,13 +3,14 @@ import { ProjectCard } from "./ProjectCard";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-// import projects from "./ProjectData.js";
-import {projects, secondProjects } from './ProjectData.js';
-
-
-
+import timeLineData from './timeLineData.js';
+import '../App.css'; // Asegúrate de importar tu archivo CSS
 
 export const Projects = () => {
+  // Filtra los proyectos del timeline
+  const projects = timeLineData.filter(item => item.type === 'project');
+  const secondProjects = timeLineData.filter(item => item.type === 'secondProject');
+  const thirdProjects = timeLineData.filter(item => item.type === 'thirdProject');
 
   return (
     <section className="project" id="projects">
@@ -18,11 +19,7 @@ export const Projects = () => {
           <Col size={12}>
             <TrackVisibility>
               {({ isVisible }) => (
-                <div
-                  className={
-                    isVisible ? "animate__animated animate__fadeIn" : ""
-                  }
-                >
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Proyectos</h2>
                   <p>
                     Explora una selección de proyectos en los que participé,
@@ -39,59 +36,42 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                        <Nav.Link eventKey="first">
-                          Ingeniería de Sonido
-                        </Nav.Link>
+                      <Nav.Link eventKey="first">Experiencia Laboral</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="second">Personal</Nav.Link>
+                        <Nav.Link eventKey="second">Ingeniería de Sonido</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
-                        <Nav.Link eventKey="third">
-                          Video de presentación
-                        </Nav.Link>
+                        <Nav.Link eventKey="third">Educación</Nav.Link>
                       </Nav.Item>
                     </Nav>
-                    <Tab.Content
-                      id="slideInUp"
-                      className={
-                        isVisible ? "animate__animated animate__slideInUp" : ""
-                      }
-                    >
+                    <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
                       <Tab.Pane eventKey="first">
-                        <Row>
-                          {projects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
-                        </Row>
+                        <div className="project-grid">
+                          {secondProjects.map((project, index) => (
+                            <div key={index} className="project-grid-item">
+                              <ProjectCard {...project} />
+                            </div>
+                          ))}
+                        </div>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <Row>
-                          {secondProjects.map((project, index) => {
-                            return <ProjectCard key={index} {...project} />;
-                          })}
-                        </Row>
-                      </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing
-                          elit. Cumque quam, quod neque provident velit, rem
-                          explicabo excepturi id illo molestiae blanditiis,
-                          eligendi dicta officiis asperiores delectus quasi
-                          inventore debitis quo.
-                        </p>
+                        <div className="project-grid">
+                          {projects.map((project, index) => (
+                            <div key={index} className="project-grid-item">
+                              <ProjectCard {...project} />
+                            </div>
+                          ))}
+                        </div>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>Aquí dejo un video de presentación:</p>
-                        <iframe
-                          width="100%"
-                          height="400"
-                          src="https://www.youtube.com/embed/mQAkyiGMEOo"
-                          title="Presentación Juan Martín Rucci"
-                          frameborder="0"
-                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                          allowfullscreen
-                        ></iframe>
+                        <div className="project-grid">
+                          {thirdProjects.map((project, index) => (
+                            <div key={index} className="project-grid-item">
+                              <ProjectCard {...project} />
+                            </div>
+                          ))}
+                        </div>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
@@ -104,4 +84,4 @@ export const Projects = () => {
       <img className="background-image-right" src={colorSharp2}></img>
     </section>
   );
-}
+};
