@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portafolio-juan-rucci/static/css/main.1272f995.css",
-    "main.js": "/portafolio-juan-rucci/static/js/main.bffdc6d2.js",
+    "main.css": "/portafolio-juan-rucci/static/css/main.0dda9756.css",
+    "main.js": "/portafolio-juan-rucci/static/js/main.d2db3842.js",
     "static/js/453.298f5782.chunk.js": "/portafolio-juan-rucci/static/js/453.298f5782.chunk.js",
     "static/media/control.pdf": "/portafolio-juan-rucci/static/media/control.0a7bb1c5a684a3749e55.pdf",
     "static/media/software.pdf": "/portafolio-juan-rucci/static/media/software.8159bce1faa7c2642f83.pdf",
@@ -12,14 +12,12 @@
     "static/media/lomaNegra2.jpg": "/portafolio-juan-rucci/static/media/lomaNegra2.98d539c1467e7aafa3ec.jpg",
     "static/media/sounding1.JPG": "/portafolio-juan-rucci/static/media/sounding1.5df35dda54f473b70b59.JPG",
     "static/media/sounding2.JPG": "/portafolio-juan-rucci/static/media/sounding2.f243660fb1f107f4053d.JPG",
-    "static/media/header-img.png": "/portafolio-juan-rucci/static/media/header-img.fc72bd36927914d95487.png",
     "static/media/sounding4.JPG": "/portafolio-juan-rucci/static/media/sounding4.702ddbfcb3b3cf00f017.JPG",
     "static/media/lomaNegra3.jpg": "/portafolio-juan-rucci/static/media/lomaNegra3.e7c0f388ec0c6334f61c.jpg",
     "static/media/fuente3.jpg": "/portafolio-juan-rucci/static/media/fuente3.c6f9c3a932b3f213c35e.jpg",
     "static/media/fuente5.jpg": "/portafolio-juan-rucci/static/media/fuente5.72a7432e71aab39227cd.jpg",
     "static/media/fuente4.jpg": "/portafolio-juan-rucci/static/media/fuente4.0df52bbf153f3e3c535c.jpg",
     "static/media/compresor.pdf": "/portafolio-juan-rucci/static/media/compresor.29814e0a5add420581ad.pdf",
-    "static/media/banner-bg.png": "/portafolio-juan-rucci/static/media/banner-bg.6868ef2b7872f0b0ab6c.png",
     "static/media/tintoYLaSangre.png": "/portafolio-juan-rucci/static/media/tintoYLaSangre.5757d648a07330dfef90.png",
     "static/media/color-sharp.png": "/portafolio-juan-rucci/static/media/color-sharp.9860b99a886679321e7c.png",
     "static/media/color-sharp2.png": "/portafolio-juan-rucci/static/media/color-sharp2.6e84e4fdcbc0a2d32392.png",
@@ -64,6 +62,7 @@
     "static/media/infrasonido.pdf": "/portafolio-juan-rucci/static/media/infrasonido.7490d3af71eeaea4ad06.pdf",
     "static/media/vibr2.jpg": "/portafolio-juan-rucci/static/media/vibr2.06590b583e9b526e0b7d.jpg",
     "static/media/casam4.jpg": "/portafolio-juan-rucci/static/media/casam4.18f27cb845f90d449e60.jpg",
+    "static/media/prueba1.png": "/portafolio-juan-rucci/static/media/prueba1.9eabb05f95383649c96d.png",
     "static/media/casam8.jpg": "/portafolio-juan-rucci/static/media/casam8.860b825a35da44fa34c1.jpg",
     "static/media/casam3.jpg": "/portafolio-juan-rucci/static/media/casam3.e78cdea1e9e7eb6ca80f.jpg",
     "static/media/casam1.jpg": "/portafolio-juan-rucci/static/media/casam1.f24c4bc8e47a7025277a.jpg",
@@ -92,12 +91,12 @@
     "static/media/arrow2.svg": "/portafolio-juan-rucci/static/media/arrow2.b3d03e1b04ec1904a5658aea5776433c.svg",
     "static/media/arrow1.svg": "/portafolio-juan-rucci/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
     "static/media/nav-icon2.svg": "/portafolio-juan-rucci/static/media/nav-icon2.a39f0e5e47e442dafcc5c9c320f19f6f.svg",
-    "main.1272f995.css.map": "/portafolio-juan-rucci/static/css/main.1272f995.css.map",
-    "main.bffdc6d2.js.map": "/portafolio-juan-rucci/static/js/main.bffdc6d2.js.map",
+    "main.0dda9756.css.map": "/portafolio-juan-rucci/static/css/main.0dda9756.css.map",
+    "main.d2db3842.js.map": "/portafolio-juan-rucci/static/js/main.d2db3842.js.map",
     "453.298f5782.chunk.js.map": "/portafolio-juan-rucci/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1272f995.css",
-    "static/js/main.bffdc6d2.js"
+    "static/css/main.0dda9756.css",
+    "static/js/main.d2db3842.js"
   ]
 }
