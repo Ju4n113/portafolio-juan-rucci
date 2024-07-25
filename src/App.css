@@ -121,8 +121,9 @@ nav.navbar {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 9999;
+  z-index: 2;
   transition:  0.32s ease-in-out;
+  height: 8rem;
 }
 
 
@@ -327,6 +328,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     position: fixed; /* Asegúrate de que el navbar permanezca en la parte superior */
     background-color: var(--black-color); /* Fondo negro en pantallas pequeñas */
     padding: 22px 0;
+    height: auto;
   }
 
   span.navbar-text {
@@ -338,7 +340,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+  nav.navbar {
+  background-color: #0e0e10;
+
+  }
+
+  .timeline-buttons {
+    position: absolute;
+  }
+}
+
+@media (min-width: 1500px) {
   .nav.navbar {
     width: auto;
   }
@@ -956,7 +969,7 @@ margin: 0 30%;
   position: absolute;
   width: 4px;
   background: linear-gradient(180deg, #89db64b5, #053b05d2);
-  top: 30px;
+  top: 0px;
   bottom: 0;
   left: 50%;
   margin-left: -2px;
@@ -1119,7 +1132,7 @@ margin: 0 30%;
   left: 0;
   width: 100%;
   background-color: #0e0e10; /* Color de fondo igual al del navbar */
-  z-index: 10; /* Asegúrate de que los botones estén por encima del contenido del timeline */
+  z-index: 1; /* Asegúrate de que los botones estén por encima del contenido del timeline */
   display: flex;
   justify-content: space-around; /* Distribuye los botones a lo largo del ancho */
   gap: 10px; /* Espacio entre los botones */
@@ -1150,6 +1163,7 @@ margin: 0 30%;
 
 @media (max-width: 768px) {
   .timeline-buttons {
+    position: absolute; 
     top: 70px;
     background-color: #252525;
   }
@@ -1163,3 +1177,20 @@ margin: 0 30%;
   }
 }
 
+/* @media (max-width: 768px) and (max-width: 1500px) {
+.timeline-buttons {
+  position: relative;
+  top: 8rem;
+}
+} */
+
+@media (min-width: 768px) and (max-width: 1500) {
+  nav {
+    padding: 0px 0;
+    position: fixed;
+  }
+
+  .navbar {
+  height: 8rem;
+  }
+}
