@@ -101,12 +101,12 @@ input:focus, textarea:focus, select:focus {
   outline: none;
 }
 
-@media (min-width:1700px) {
+/* @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
 		padding: 0 150px;
 	}
-}
+} */
 
 p.success {
 	color: var(--success-color);
@@ -115,6 +115,7 @@ p.success {
 p.danger {
 	color: var(--danger-color);
 }
+
 /************ Navbar Css ************/
 nav.navbar {
   padding: 18px 0;
@@ -156,7 +157,8 @@ span.navbar-text {
 }
 
 .social-icon {
-    display: inline-block;
+    display: flex;
+    justify-content: space-evenly;
     margin-left: 14px;
     padding: 20px;
 }
@@ -306,6 +308,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   justify-content: center;
   line-height: 1;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  color: var(--white-color);
 }
 
 .social-icon .cv-button::before {
@@ -340,14 +343,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
-  nav.navbar {
-  background-color: #0e0e10;
 
+@media (min-width: 768px) and (max-width: 1500) {
+  nav.navbar {
+    background-color: #0e0e10;
+    }
+
+  nav {
+    padding: 0px 0;
+    position: fixed;
   }
 
-  .timeline-buttons {
-    position: absolute;
+  .navbar {
+  height: 8rem;
   }
 }
 
@@ -360,7 +368,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     display: flex;
   }
 }
-
 /************ Banner CSS ************/
 .banner {
   margin-top: 0;
@@ -942,6 +949,9 @@ margin: 0 30%;
   color: var(--gray-color);
   letter-spacing: 0.5px;
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /************ TimeLine Css ************/
@@ -993,6 +1003,7 @@ margin: 0 30%;
   margin: 80px 0 20px 0;
   width: 100%;
   z-index: 1;
+  justify-content: space-between;
 }
 
 .timeline-year {
@@ -1031,10 +1042,41 @@ margin: 0 30%;
   z-index: -1;
 }
 
+.timeline-iconContainer {
+  /* width: 90px;
+  height: 90px; */
+  width: 45%;
+  padding: 2rem 0;
+  /* background: linear-gradient(45deg, #014c01, #00ff73); */
+  color: var(--white-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  /* justify-content: fix-end; */
+  /* font-size: 20px;
+  font-weight: 700;
+  overflow: hidden;
+  position: relative; */
+  /* margin-left: 8vh;
+  margin-right: 8vh; */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.timeline-item:nth-child(odd) .timeline-iconContainer {
+  justify-content: flex-end;
+}
+
+.timeline-item:nth-child(even) .timeline-iconContainer {
+  justify-content: flex-start;
+}
+
+
 .timeline-icon {
-  width: 90px;
-  height: 90px;
-  background: linear-gradient(45deg, #014c01, #00ff73);
+    /* width: 90px;
+  height: 90px; */
+  /* width: 50%; */
+  /* background: linear-gradient(45deg, #014c01, #00ff73); */
   color: var(--white-color);
   border-radius: 50%;
   display: flex;
@@ -1044,15 +1086,17 @@ margin: 0 30%;
   font-weight: 700;
   overflow: hidden;
   position: relative;
-  margin-left: 8vh;
-  margin-right: 8vh;
+  /* margin-left: 8vh;
+  margin-right: 8vh; */
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
 .timeline-icon img {
-  width: 100%;
-  height: 100%;
+  width: 90px;
+  height: 90px;
+  /* width: 100%;
+  height: 100%; */
   object-fit: cover;
   border-radius: 50%;
   /* border: #ffffff 2px solid; */
@@ -1088,7 +1132,7 @@ margin: 0 30%;
   /*border: 2px solid transparent; /* Cambiado para que el borde se vea redondeado */
   /*border-image: linear-gradient(45deg, #00ff00, #00ffcc) 1;*/
   border-radius: 50px; /* Ajusta el radio para que sea completamente redondeado */
-  width: calc(50% - 60px);
+  width: 45%;
   margin-right: 2vh;
   margin-left: 2vh;
   position: relative;
@@ -1112,23 +1156,10 @@ margin: 0 30%;
   line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-  .timeline {
-    top: 6.5rem;
-  }
-
-  .timeline-container {
-    padding: 0 0 0 0; /* Tamaño del h1 para pantallas pequeñas */
-  }
-
-  .timeline-content {
-    padding: 15px;
-  }
-}
 
 .timeline-buttons {
-  /* position: absolute;  */
-  top: 115px; /* Ajusta según el alto del navbar */
+  /*position: absolute; 
+  top: 8rem; /* Ajusta según el alto del navbar */
   left: 0;
   width: 100%;
   background-color: #0e0e10; /* Color de fondo igual al del navbar */
@@ -1162,6 +1193,23 @@ margin: 0 30%;
 }
 
 @media (max-width: 768px) {
+
+  .timeline {
+    top: 6.5rem;
+  }
+
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    flex: 1;
+    padding: 0 0 0 0; /* Tamaño del h1 para pantallas pequeñas */
+  }
+
+  .timeline-content {
+    width: 35%;
+    padding: 15px;
+  }
   .timeline-buttons {
     position: absolute; 
     top: 70px;
@@ -1175,6 +1223,21 @@ margin: 0 30%;
     justify-content: center;
     align-self: center;
   }
+
+  .timeline-iconContainer {
+    display: flex;
+    width: 40%;
+  }
+
+  .timeline-content:hover {
+    transform: scale(0.9);
+  }
+
+  .footer {
+    position: relative;
+    /* background-position: auto; */
+  }
+
 }
 
 /* @media (max-width: 768px) and (max-width: 1500px) {
@@ -1184,13 +1247,28 @@ margin: 0 30%;
 }
 } */
 
-@media (min-width: 768px) and (max-width: 1500) {
-  nav {
-    padding: 0px 0;
-    position: fixed;
-  }
+@media (min-width: 768px) and (max-width: 1500px) {
 
-  .navbar {
-  height: 8rem;
+  /* .navbar {
+    background-color: #0e0e10;
+    } */
+
+    .timeline {
+      position: relative;
+      top: 6rem;
+      margin-bottom: 6rem;
+    }
+
+    .navbar.timeline-page {
+      background-color: #0e0e10;
+    }    
+
+    .timeline-buttons {
+      position: absolute;
+      top: 7.5rem;
+    }
+
+    .social-icon {
+      display: flex;
+    }
   }
-}

@@ -40,6 +40,14 @@ export const NavBar = () => {
     } else if (path === '/timeline') {
       setActiveLink('timeline');
     }
+
+    // Agregar clase especial si la URL termina en /timeline
+    const navbar = document.querySelector(".navbar");
+    if (location.pathname.endsWith("/timeline")) {
+      navbar.classList.add("timeline-page");
+    } else {
+      navbar.classList.remove("timeline-page");
+    }
   }, [location]);
 
   const handleNavClick = (value, hash) => {
@@ -51,17 +59,15 @@ export const NavBar = () => {
       const section = document.querySelector(hash);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
-      }
-      else {
+      } else {
         // Desplazarse a la parte superior si ya estás en la página de timeline
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
     }, 100);
   };
 
-
   return (
-    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+    <Navbar expand="md" className={`${scrolled ? "scrolled" : ""}`}>
       <Container>
         <Navbar.Brand as={Link} to="/" onClick={() => handleNavClick('home', '#home')}>
           <img src={logo} alt="Logo" />

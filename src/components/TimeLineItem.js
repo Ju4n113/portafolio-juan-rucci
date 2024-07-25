@@ -16,8 +16,10 @@ function TimeLineItem({ year, title, description, imgSrc, modalContent }) {
           <p>{description}</p>
         </div>
         <div className="timeline-year">{year}</div>
+        <div className="timeline-iconContainer">
         <div className="timeline-icon">
           <img src={imgSrc} alt={title} />
+        </div>
         </div>
       </div>
       {showModal && (
