@@ -71,7 +71,7 @@ const timeLineData = [
     type: 'secondProject',
     modalContent: {
         title: "Dúo Martinez-Rucci",
-        description: "Formé parte de un dúo de cámara con Catalina Martínez, soprano, con el que hemos tocado en diversos casamientos, ofreciendo un toque especial a cada celebración.",
+        description: "Formé parte de un dúo de cámara con Catalina Martínez, soprano, participando en eventos privados.",
         images: [casam8, casam9, casam10, casam7, casam6, casam5, casam4, casam3, casam2, casam1],  // Usa un array con la imagen principal
         pdfUrl: "",
         iframeUrl: null,
@@ -189,7 +189,7 @@ const timeLineData = [
         type: 'secondProject',
         modalContent: {
             title: "Trabajo Remoto Durante la Pandemia",
-            description: `Durante la pandemia en 2020, me dediqué a realizar trabajos de manera remota. Entre los proyectos que llevé a cabo, destacaron la eliminación de ruido de audios para un podcast, mejorando la claridad y calidad del sonido, y la participación en estudios subjetivos de calidad de imágenes y video. Para conocer más sobre estos trabajos y explorar otros proyectos, puedes visitar mi perfil en <a href="https://www.freelancer.com/u/ju4n113" target="_blank" rel="noopener noreferrer">Freelancer</a>.`,
+            description: `Durante la pandemia en 2020, me dediqué a realizar trabajos de manera remota. Entre los proyectos que llevé a cabo, destacaron la eliminación de ruidos de audios en podcast, mejorando la claridad y calidad del sonido, y la participación en estudios subjetivos de calidad de imágenes y video. Para conocer más sobre estos trabajos y explorar otros proyectos, puedes visitar mi perfil en <a href="https://www.freelancer.com/u/ju4n113" target="_blank" rel="noopener noreferrer">Freelancer</a>.`,
             images: null,
             pdfUrl: null,
             iframeUrl: null, // Aquí se agrega el iframe

@@ -3,7 +3,7 @@ import React from 'react';
 
 const VideoSection = () => {
   return (
-    <section id="presentation" className="project">
+    <section id="presentation" className="projectVideo">
       <Container>
         <h2>Video de Presentación</h2>
         <p>Aquí dejo un video de presentación:</p>
