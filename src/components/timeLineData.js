@@ -59,6 +59,9 @@ import projectPdf from "../assets/pdfs/nicolo.pdf";
 import projectPdf2 from "../assets/pdfs/software.pdf";
 import projectPdf3 from "../assets/pdfs/control.pdf";
 import freelan from "../assets/img/freelan.png";
+import eestn1 from "../assets/img/eestn1.png";
+import untrefLogo from "../assets/img/untrefLogo.png";
+import untrefLogo2 from "../assets/img/untrefLogo.jpg";
 
 
 const timeLineData = [
@@ -102,6 +105,21 @@ const timeLineData = [
             title: "Pasante en Loma Negra SA ",
             description: `Durante mi último año de la escuela secundaria técnica, tuve la oportunidad de realizar prácticas profesionales en Loma Negra SA. Durante esta pasantía, participé en diversas tareas tanto de campo como administrativas, adquiriendo valiosa experiencia y habilidades prácticas. Mis responsabilidades incluyeron: mediciones de grosor de tolvas, relevamiento de materiales en disposición, ejecución de diversas tareas administrativas, entre otras.`,
             images: [lomaNegra2, lomaNegra1, lomaNegra3],  // Usa un array con varias imágenes
+            pdfUrl: "",
+            iframeUrl: null,
+        }
+    },
+    { 
+        year: 2016, 
+        title: 'Técnico en Electrimecánica', 
+        description: 'Finalicé mis estudios en la Escuela de Educación Secundaria Técnica N°1 "Bonifacio Velázquez" de Villa Ramallo, obteniendo el título de Técnico en Electromecánica.', 
+        imgSrc: eestn1,
+        categories: ['Estudios'],
+        // type: 'thirdProject',
+        modalContent: {
+            title: "Técnico en Electrimecánica",
+            description: `En 2016 finalicé mis estudios en la Escuela de Educación Secundaria Técnica N°1 "Bonifacio Velázquez" de Villa Ramallo, donde obtuve el título de Técnico en Electromecánica.`,
+            images: null,  // Usa un array con varias imágenes
             pdfUrl: "",
             iframeUrl: null,
         }
@@ -263,7 +281,7 @@ const timeLineData = [
         title: 'Seminario de Infrasonido',
         description: `Completé con éxito el seminario Infrasonido dictado por el prof. Dr José Ruzzante, adquiriendo conocimiento sobre la propagación, detección, fuentes e inconvenientes asociados con los infrasonidos.`,
         imgSrc: infr,
-        categories: ['Estudios'],
+        categories: ['Estudios', 'Ingenieria de Sonido'],
         type: 'thirdProject',
         modalContent: {
             title: "Seminario de Infrasonido",
@@ -278,7 +296,7 @@ const timeLineData = [
         title: "Modelado geométrico y acústico del auditorio Niccolo Paganini",
         description: "Para la materia Instrumentos y Mediciones Acústicas (IMA), se realizó un análisis detallado del modelado geométrico y acústico del auditorio Niccolò Paganini en Parma, Italia, utilizando el software EASE.",
         imgSrc: projImg1,
-        categories: ['Ingeniería de Sonido'],
+        categories: ['Ingenieria de Sonido'],
         type: 'project',
         modalContent: {
             title: "Modelado geométrico y acústico del auditorio Niccolo Paganini",
@@ -293,7 +311,7 @@ const timeLineData = [
         title: "Desarrollo de un software para procesamiento de RIR's",
         description: "Para la materia IMA, se desarrolló un programa informático en Python para calcular parámetros acústicos de salas, incluyendo respuestas al impulso monofónicas y estereofónicas.",
         imgSrc: projImg2,
-        categories: ['Ingeniería de Sonido'],
+        categories: ['Ingenieria de Sonido'],
         type: 'project',
         modalContent: {
             title: "Desarrollo de un software para procesamiento de RIR's",
@@ -308,7 +326,7 @@ const timeLineData = [
         title: "Diseño de un Control Room",
         description: "Para la materia IMA, diseñamos un control room de tipo anecoico para un estudio de grabación, combinando estructuras de tipo domo y con capacidad para cinco personas. Este recinto está equipado con un sistema de monitoreo multicanal 3D y un sistema binaural.",
         imgSrc: projImg3,
-        categories: ['Ingeniería de Sonido'],
+        categories: ['Ingenieria de Sonido'],
         type: 'project',
         modalContent: {
             title: "Diseño de un Control Room",
@@ -317,6 +335,21 @@ const timeLineData = [
             pdfUrl: projectPdf3,
             iframeUrl: null, // Aquí se agrega el iframe
         },
+    },
+    { 
+        year: 2023, 
+        title: 'Técnico de Grabación y Sonido', 
+        description: 'En 2023, completé las materias correspondientes para obtener el título de Técnico de Grabación y Sonido, abarcando áreas esenciales como grabación, edición de audio, acústica y producción musical.', 
+        imgSrc: untrefLogo,
+        categories: ['Estudios', 'Ingenieria de Sonido'],
+        type: 'thirdProject',
+        modalContent: {
+            title: "Técnico de Grabación y Sonido",
+            description: `A lo largo de este proceso, he adquirido competencias tecnológicas, incluyendo la capacidad para diseñar, modelar y operar sistemas vinculados directamente con el sonido. Además, he desarrollado habilidades en grabación, mezcla, masterización y postproducción de productos sonoros, así como en la instalación y calibración de sistemas de sonido. Este logro refleja mi dedicación y competencia en el campo del sonido y la grabación, y me ha preparado para avanzar en mis estudios y proyectos profesionales dentro de la carrera de Ingeniería de Sonido."`,
+            images: [untrefLogo2],  // Usa un array con varias imágenes
+            pdfUrl: "",
+            iframeUrl: null,
+        }
     },
     // Otros ítems...
 ];
