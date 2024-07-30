@@ -10,25 +10,28 @@ const TimeLine = () => {
     const timeline = document.querySelector('.timeline');
     let angle = 0;
 
-    //function rotateGradient() {
-    //  angle = (angle + 1) % 360;
-    //  timeline.style.background = `linear-gradient(${angle}deg, var(--gris-verde-oscuro) 15%, var(--verde-medio) 125%)`;
-    //}
+    // function rotateGradient() {
+    //   angle = (angle + 1) % 360;
+    //   timeline.style.background = `linear-gradient(${angle}deg, var(--gris-verde-oscuro) 15%, var(--verde-medio) 125%)`;
+    // }
 
-    //const duration = 45000; // Duración total del ciclo en milisegundos (45 segundos)
-    //const interval = duration / 360; // Intervalo de tiempo para cada grado de rotación
+    // const duration = 45000; // Duración total del ciclo en milisegundos (45 segundos)
+    // const interval = duration / 360; // Intervalo de tiempo para cada grado de rotación
 
-    //const timer = setInterval(rotateGradient, interval);
+    // const timer = setInterval(rotateGradient, interval);
 
-    //return () => {
-    //  clearInterval(timer); // Limpia el intervalo cuando el componente se desmonta
-    //};
+    // return () => {
+    //   clearInterval(timer); // Limpia el intervalo cuando el componente se desmonta
+    // };
   }, []); // El segundo argumento [] asegura que useEffect se ejecute solo una vez al montar el componente
+
+  // Invertir el arreglo de datos
+  const reversedData = [...timeLineData].reverse();
 
   // Filtra los datos según la categoría seleccionada
   const filteredData = selectedCategory === 'Todos' 
-    ? timeLineData 
-    : timeLineData.filter(item => item.categories.includes(selectedCategory));
+    ? reversedData 
+    : reversedData.filter(item => item.categories.includes(selectedCategory));
 
   return (
     <div className="timeline-container">

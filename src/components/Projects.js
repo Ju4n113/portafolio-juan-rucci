@@ -7,10 +7,13 @@ import timeLineData from './timeLineData.js';
 import '../App.css'; // Asegúrate de importar tu archivo CSS
 
 export const Projects = () => {
+  // Invertir el arreglo de datos
+  const reversedData = [...timeLineData].reverse();
+
   // Filtra los proyectos del timeline
-  const projects = timeLineData.filter(item => item.type === 'project');
-  const secondProjects = timeLineData.filter(item => item.type === 'secondProject');
-  const thirdProjects = timeLineData.filter(item => item.type === 'thirdProject');
+  const projects = reversedData.filter(item => item.type === 'project');
+  const secondProjects = reversedData.filter(item => item.type === 'secondProject');
+  const thirdProjects = reversedData.filter(item => item.type === 'thirdProject');
 
   return (
     <section className="project" id="projects">
@@ -36,7 +39,7 @@ export const Projects = () => {
                       id="pills-tab"
                     >
                       <Nav.Item>
-                      <Nav.Link eventKey="first">Experiencia Laboral</Nav.Link>
+                        <Nav.Link eventKey="first">Experiencia Laboral</Nav.Link>
                       </Nav.Item>
                       <Nav.Item>
                         <Nav.Link eventKey="second">Ingeniería de Sonido</Nav.Link>
@@ -81,7 +84,7 @@ export const Projects = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-right" src={colorSharp2}></img>
+      <img className="background-image-right" src={colorSharp2} alt="background"></img>
     </section>
   );
 };

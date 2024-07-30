@@ -52,6 +52,7 @@ export const NavBar = () => {
 
   const handleNavClick = (value, hash) => {
     setActiveLink(value);
+    setMenuOpen(false); // Cierra el menú al hacer clic en una sección
     if (location.pathname !== '/') {
       navigate('/');
     }
@@ -67,7 +68,7 @@ export const NavBar = () => {
   };
 
   return (
-    <Navbar expand="md" className={`${scrolled ? "scrolled" : ""}`}>
+    <Navbar expand="xl" className={`${scrolled ? "scrolled" : ""}`}>
       <Container>
         <Navbar.Brand as={Link} to="/" onClick={() => handleNavClick('home', '#home')}>
           <img src={logo} alt="Logo" />

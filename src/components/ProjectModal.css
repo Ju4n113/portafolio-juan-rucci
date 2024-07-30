@@ -46,6 +46,7 @@
 
 .project-modal-header h3 {
   margin: 0; /* Asegura que no haya espacio adicional alrededor del título */
+  color: white
 }
 
 .project-modal-content {
@@ -58,6 +59,7 @@
 .project-modal-content p {
   text-align: center;
   margin: 0; /* Asegura que no haya espacio adicional alrededor del párrafo */
+  color: white
 }
 
 .project-modal-content img {

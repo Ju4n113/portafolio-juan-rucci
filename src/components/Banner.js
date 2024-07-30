@@ -60,9 +60,9 @@ export const Banner = () => {
                       </div>
                       <span className="txt-rotate" dataPeriod="1000" data-rotate='["Estudiante avanzado en Ingeniería de Sonido"]'><span className="wrap">{text}</span></span></h1>
                     </div>
-                    <div className="bannerParrafo">
+                    {/* <div className="bannerParrafo">
                       <p>Valoro la dedicación tanto en el estudio como en el trabajo, otorgándoles siempre la importancia y responsabilidad que merecen. En el ámbito laboral, destaco por mi creatividad y proactividad, considerándolos fundamentales para alcanzar el éxito en equipo.</p>
-                    </div>
+                    </div> */}
                   </div>
                 </div>}
             </TrackVisibility>

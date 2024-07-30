@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import logo from './logo.svg';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
@@ -14,20 +13,24 @@ import { Footer } from "./components/Footer";
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div className="App">
         <NavBar />
         <Routes>
           <Route path="/" element={
-            <>
-              <Banner />
-              <Skills />
-              <Projects />
-              <VideoSection />
-              <Contact />
-            </>
+            <main>
+              <section className="section"><Banner /></section>
+              <section className="section"><Skills /></section>
+              <section className="section"><Projects /></section>
+              <section className="section"><VideoSection /></section>
+              <section className="section"><Contact /></section>
+            </main>
           } />
-          <Route path="/timeline" element={<TimeLine />} />
+          <Route path="/timeline" element={
+            <section className="timeline">
+              <TimeLine />
+            </section>
+          } />
         </Routes>
         <Footer />
       </div>
