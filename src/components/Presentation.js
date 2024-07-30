@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import '../App.css'; // Asegúrate de importar el archivo CSS
 
 const VideoSection = () => {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <section id="presentation" className="projectVideo">
       <div className="video-container">
@@ -16,7 +20,7 @@ const VideoSection = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <Link to="/timeline" className="timeline-link">
+      <Link to="/timeline" className="timeline-link" onClick={handleClick}>
         <div className="project-timeline-container">
           <div className="project-timeline-box">
             <div className="project-timeline-box-content">
