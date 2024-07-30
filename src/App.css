@@ -976,6 +976,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   transition: 0.3s ease-in-out;
 }
 
+.contact img {
+  width: 80%;
+  border-radius: 50%;
+  box-shadow: inset 20px 0px 20px 20px #010101, inset -20px -1px 20px 20px #545454, 7px 0px 13px 1px #a3a3a1, -14px 1px 7px rgb(96, 94, 92); /* Neumorfismo */
+}
+.contact h2 {
+	font-size: 45px;
+	font-weight: 700;
+  margin-bottom: 30px;
+}
+
+
 .contact form input.error, .contact form textarea.error {
   border-color: red;
 }
@@ -1045,12 +1057,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 10px;
 }
 
+.contact > .container {
+  padding: 0 0 4rem 0;
+}
+
 
 
 @media (max-width: 1200px) {
   .contact {
     height: auto;
-    padding: 0 0 20vh 0;
+    padding: 0 0 5vh 0;
   }
 
   .contact form input, .contact form textarea {
@@ -1066,6 +1082,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     transform: scale(0.8); 
     width: 100%;
   }
+
+  .contact > .container {
+    padding: 0 0 0 0;
+  }
+  
 }
 
 
