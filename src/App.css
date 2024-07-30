@@ -1168,7 +1168,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 0;
   padding: 13vh 0 0 0;
   background: var(--gris-claro-claro);
-  overflow: hidden;
+  overflow: visible; /* Cambiado de hidden a visible */
 }
 
 .timeline {
@@ -1371,7 +1371,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 @media (max-width: 768px) {
 
   .timeline {
-    padding: 0 0 0 0;
+    padding: 0 0 6vh 0;
     top: 4rem;
   }
 
@@ -1388,7 +1388,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     flex-direction: column;
     min-height: 100vh;
     flex: 1;
-    padding: 0 0 0 0;
+    padding: 0 0 3rem 0; /* Agregar margen inferior */
   }
 
   .timeline-content {
@@ -1399,7 +1399,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .timeline-buttons {
     position: absolute; 
     top: 1rem;
-    
     padding: 1rem 5px 0.5rem 5px;
   }
 
@@ -1429,7 +1428,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .footer {
     position: relative;
   }
-
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -1438,36 +1436,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     margin: 10rem 0 20px 0;
   }
 
-  .timeline-content {
-    transform: scale(0.9);
-  }
-  .timeline-content:hover {
-    transform: scale(0.92);
-  }
-
-.timeline-buttons {
-  position: absolute;
-  top: 6rem;
-  padding: 1rem 5px;
-}
-}
-
-@media (min-width: 1200px) and (max-width: 1500px) {
-
-  .timeline {
-    position: relative;
-    background-color: #dbd9d8;
-  }
-
-  .navbar.timeline-page {
-    background-color: var(--gris-claro-claro);
-  }    
-
-  .timeline-buttons {
-    position: absolute;
-    top: 5rem;
-    padding: 2rem 0 0 0;
-    z-index: 1;
+  .timeline-container {
+    margin-top: 1rem;
   }
 
   .timeline-content {
@@ -1475,9 +1445,5 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .timeline-content:hover {
     transform: scale(0.92);
-  }
-
-  .social-icon {
-    display: flex;
   }
 }
