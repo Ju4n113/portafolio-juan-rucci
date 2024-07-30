@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portafolio-juan-rucci/static/css/main.6b741c38.css",
+    "main.css": "/portafolio-juan-rucci/static/css/main.abc03a52.css",
     "main.js": "/portafolio-juan-rucci/static/js/main.de59c4f5.js",
     "static/js/453.298f5782.chunk.js": "/portafolio-juan-rucci/static/js/453.298f5782.chunk.js",
     "static/media/control.pdf": "/portafolio-juan-rucci/static/media/control.0a7bb1c5a684a3749e55.pdf",
@@ -91,12 +91,12 @@
     "static/media/arrow2.svg": "/portafolio-juan-rucci/static/media/arrow2.b3d03e1b04ec1904a5658aea5776433c.svg",
     "static/media/arrow1.svg": "/portafolio-juan-rucci/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
     "static/media/nav-icon2.svg": "/portafolio-juan-rucci/static/media/nav-icon2.a39f0e5e47e442dafcc5c9c320f19f6f.svg",
-    "main.6b741c38.css.map": "/portafolio-juan-rucci/static/css/main.6b741c38.css.map",
+    "main.abc03a52.css.map": "/portafolio-juan-rucci/static/css/main.abc03a52.css.map",
     "main.de59c4f5.js.map": "/portafolio-juan-rucci/static/js/main.de59c4f5.js.map",
     "453.298f5782.chunk.js.map": "/portafolio-juan-rucci/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b741c38.css",
+    "static/css/main.abc03a52.css",
     "static/js/main.de59c4f5.js"
   ]
 }
