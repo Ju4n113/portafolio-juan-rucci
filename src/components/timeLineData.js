@@ -62,6 +62,13 @@ import freelan from "../assets/img/freelan.png";
 import eestn1 from "../assets/img/eestn1.png";
 import untrefLogo from "../assets/img/untrefLogo.png";
 import untrefLogo2 from "../assets/img/untrefLogo.jpg";
+import ime from "../assets/img/ime.jpg";
+import ime2 from "../assets/img/ime2.jpg";
+import ime3 from "../assets/img/ime3.jpg";
+import ime4 from "../assets/img/ime4.png";
+import ime5 from "../assets/img/ime5.jpg";
+import ime6 from "../assets/img/ime6.jpeg";
+import ime7 from "../assets/img/ime7.png";
 
 
 const timeLineData = [
@@ -254,6 +261,21 @@ const timeLineData = [
             description: `Como proyecto final para la materia Circuitos Electrónicos II, diseñé un compresor de dos canales en el software Altium, adaptándolo para un espacio de rack de un solo módulo. Partiendo de un circuito proporcionado por el profesor, utilicé Altium, un software de automatización de diseño electrónico para ingenieros, para el diseño de la placa de circuito impreso, aprendiendo a manejar el software en el proceso. Quisiera destacar que la finalización de este proyecto no hubiera sido posible sin la ayuda y el compañerismo de <a href="https://www.linkedin.com/in/leandro-bilbao/" target="_blank" rel="noopener noreferrer">Leandro Bilbao</a>, quien aportó un conocimiento y una organización excepcionales en el uso de Altium.`,
             images: [compre1, compre2, compre3],
             pdfUrl: compresor,
+            iframeUrl: null,
+        }
+    },
+    {
+        year: 2023,
+        title: 'Voltímetro activo para señales de baja amplitud con lectura true RMS',
+        description: `Proyecto de implementación de un voltímetro activo para baja señal con lectura true RMS, capaz de medir tensiones de 300 µV a 2 V y frecuencias de 1 Hz a 150 kHz.`,
+        imgSrc: ime7,
+        categories: ['Ingenieria de Sonido'],
+        type: 'project',
+        modalContent: {
+            title: "Voltímetro activo para señales de baja amplitud con lectura true RMS",
+            description: `Proyecto de implementación de un voltímetro activo para baja señal con lectura true RMS, capaz de medir tensiones de 300 µV a 2 V y frecuencias de 1 Hz a 150 kHz. Diseñado para superar las limitaciones de los voltímetros convencionales, amplifica la señal de entrada y la envía a un osciloscopio mientras la mide simultáneamente. El proyecto fue realizado junto con <a href="https://www.linkedin.com/in/leandro-bilbao/" target="_blank" rel="noopener noreferrer">Leandro Bilbao</a> y <a href="https://www.linkedin.com/in/francoareco/?originalSubdomain=ar" target="_blank" rel="noopener noreferrer">Franco Areco</a>.`,
+            images: [ime, ime2, ime3, ime4, ime5, ime6],
+            pdfUrl: null,
             iframeUrl: null,
         }
     },
