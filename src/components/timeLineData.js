@@ -69,6 +69,10 @@ import ime4 from "../assets/img/ime4.png";
 import ime5 from "../assets/img/ime5.jpg";
 import ime6 from "../assets/img/ime6.jpeg";
 import ime7 from "../assets/img/ime7.png";
+import iso1 from "../assets/img/iso1.png";
+import iso2 from "../assets/img/iso2.png";
+import iso3 from "../assets/img/iso3.png";
+import iso4 from "../assets/img/iso4.png";
 
 
 const timeLineData = [
@@ -369,6 +373,22 @@ const timeLineData = [
             title: "Técnico de Grabación y Sonido",
             description: `A lo largo de este proceso, he adquirido competencias tecnológicas, incluyendo la capacidad para diseñar, modelar y operar sistemas vinculados directamente con el sonido. Además, he desarrollado habilidades en grabación, mezcla, masterización y postproducción de productos sonoros, así como en la instalación y calibración de sistemas de sonido. Este logro refleja mi dedicación y competencia en el campo del sonido y la grabación, y me ha preparado para avanzar en mis estudios y proyectos profesionales dentro de la carrera de Ingeniería de Sonido."`,
             images: [untrefLogo2],  // Usa un array con varias imágenes
+            pdfUrl: "",
+            iframeUrl: null,
+        }
+    },
+    { 
+        year: 2024, 
+        title: 'Práctica universitaria en el ISO', 
+        description: `Durante mi práctica profesional en el ISO (Instituto Superior de Otorrinolaringología), desde septiembre a noviembre del 2024, trabajé en el desarrollo y calibración de software para pruebas auditivas, realicé ajustes en sistemas de reproducción sonora y participé en experimentos de localización sonora bajo condiciones controladas. Esta experiencia me permitió aplicar conocimientos en acústica, programación y psicoacústica, además de optimizar recursos para garantizar datos confiables.
+        Fue una etapa importante para afianzar habilidades técnicas y comprender la relevancia de la Ingeniería de Sonido en el ámbito clínico y de investigación.`, 
+        imgSrc: iso1,
+        categories: ['Experiencia Laboral', 'Ingenieria de Sonido'],
+        type: 'secondProject',
+        modalContent: {
+            title: "Práctica universitaria en el ISO",
+            description: `A lo largo de este proceso, he adquirido competencias tecnológicas, incluyendo la capacidad para diseñar, modelar y operar sistemas vinculados directamente con el sonido. Además, he desarrollado habilidades en grabación, mezcla, masterización y postproducción de productos sonoros, así como en la instalación y calibración de sistemas de sonido. Este logro refleja mi dedicación y competencia en el campo del sonido y la grabación, y me ha preparado para avanzar en mis estudios y proyectos profesionales dentro de la carrera de Ingeniería de Sonido."`,
+            images: [iso1, iso2, iso3, iso4],  // Usa un array con varias imágenes
             pdfUrl: "",
             iframeUrl: null,
         }
