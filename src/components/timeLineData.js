@@ -387,7 +387,7 @@ const timeLineData = [
         type: 'secondProject',
         modalContent: {
             title: "Práctica universitaria en el ISO",
-            description: `A lo largo de este proceso, he adquirido competencias tecnológicas, incluyendo la capacidad para diseñar, modelar y operar sistemas vinculados directamente con el sonido. Además, he desarrollado habilidades en grabación, mezcla, masterización y postproducción de productos sonoros, así como en la instalación y calibración de sistemas de sonido. Este logro refleja mi dedicación y competencia en el campo del sonido y la grabación, y me ha preparado para avanzar en mis estudios y proyectos profesionales dentro de la carrera de Ingeniería de Sonido."`,
+            description: `Desarrollo y calibración de software para pruebas auditivas, ajustes en sistemas sonoros y participación en experimentos de localización sonora. Fortalecí habilidades en acústica, programación y psicoacústica, aplicando la Ingeniería de Sonido en entornos clínicos e investigativos.`,
             images: [iso1, iso2, iso3, iso4],  // Usa un array con varias imágenes
             pdfUrl: "",
             iframeUrl: null,
