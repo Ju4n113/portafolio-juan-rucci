@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio-juan-rucci/static/css/main.6fdec6b1.css",
-    "main.js": "/portafolio-juan-rucci/static/js/main.8a01f3f6.js",
+    "main.js": "/portafolio-juan-rucci/static/js/main.fba3265f.js",
     "static/js/453.298f5782.chunk.js": "/portafolio-juan-rucci/static/js/453.298f5782.chunk.js",
     "static/media/control.pdf": "/portafolio-juan-rucci/static/media/control.0a7bb1c5a684a3749e55.pdf",
     "static/media/software.pdf": "/portafolio-juan-rucci/static/media/software.8159bce1faa7c2642f83.pdf",
@@ -42,11 +42,11 @@
     "static/media/Matlab_Logo.png": "/portafolio-juan-rucci/static/media/Matlab_Logo.4aad1a3d3b4abc9ea503.png",
     "static/media/sounding6.JPEG": "/portafolio-juan-rucci/static/media/sounding6.1efeecc13dc6de98ae48.JPEG",
     "static/media/ime.jpg": "/portafolio-juan-rucci/static/media/ime.eebe5703e15c946eec16.jpg",
+    "static/media/CV-RUCCI_JUAN_MARTIN.pdf": "/portafolio-juan-rucci/static/media/CV-RUCCI_JUAN_MARTIN.7df3fe0e5aec499e9e63.pdf",
     "static/media/tintoYLaSangre2.jpg": "/portafolio-juan-rucci/static/media/tintoYLaSangre2.986dd13a45c9c28976ee.jpg",
     "static/media/distor2.jpeg": "/portafolio-juan-rucci/static/media/distor2.fe7857bda46b8161e410.jpeg",
     "static/media/iSon2.jpeg": "/portafolio-juan-rucci/static/media/iSon2.c4c670fbafa1696d6d2d.jpeg",
     "static/media/ime6.jpeg": "/portafolio-juan-rucci/static/media/ime6.813ed2c4f63a61225e0d.jpeg",
-    "static/media/CV-RUCCI_JUAN_MARTIN.pdf": "/portafolio-juan-rucci/static/media/CV-RUCCI_JUAN_MARTIN.5d1d4740201aacfa8671.pdf",
     "static/media/python.png": "/portafolio-juan-rucci/static/media/python.82efb64f8698a267f8bf.png",
     "static/media/infrasonido.png": "/portafolio-juan-rucci/static/media/infrasonido.75aa7ed3dae140c50c36.png",
     "static/media/dtac1.jpeg": "/portafolio-juan-rucci/static/media/dtac1.49d606c372132543e256.jpeg",
@@ -106,11 +106,11 @@
     "static/media/arrow1.svg": "/portafolio-juan-rucci/static/media/arrow1.1088f8313e5637897aff2414e5938141.svg",
     "static/media/nav-icon2.svg": "/portafolio-juan-rucci/static/media/nav-icon2.a39f0e5e47e442dafcc5c9c320f19f6f.svg",
     "main.6fdec6b1.css.map": "/portafolio-juan-rucci/static/css/main.6fdec6b1.css.map",
-    "main.8a01f3f6.js.map": "/portafolio-juan-rucci/static/js/main.8a01f3f6.js.map",
+    "main.fba3265f.js.map": "/portafolio-juan-rucci/static/js/main.fba3265f.js.map",
     "453.298f5782.chunk.js.map": "/portafolio-juan-rucci/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6fdec6b1.css",
-    "static/js/main.8a01f3f6.js"
+    "static/js/main.fba3265f.js"
   ]
 }
