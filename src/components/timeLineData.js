@@ -380,14 +380,14 @@ const timeLineData = [
     { 
         year: 2024, 
         title: 'Práctica universitaria en el ISO', 
-        description: `Durante mi práctica profesional en el ISO (Instituto Superior de Otorrinolaringología), desde septiembre a noviembre del 2024, trabajé en el desarrollo y calibración de software para pruebas auditivas, realicé ajustes en sistemas de reproducción sonora y participé en experimentos de localización sonora bajo condiciones controladas. Esta experiencia me permitió aplicar conocimientos en acústica, programación y psicoacústica, además de optimizar recursos para garantizar datos confiables.
-        Fue una etapa importante para afianzar habilidades técnicas y comprender la relevancia de la Ingeniería de Sonido en el ámbito clínico y de investigación.`, 
+        description: `Desarrollo y calibración de software para pruebas auditivas, ajustes en sistemas sonoros y participación en experimentos de localización sonora. Fortalecí habilidades en acústica, programación y psicoacústica, aplicando la Ingeniería de Sonido en entornos clínicos e investigativos.`, 
         imgSrc: iso1,
         categories: ['Experiencia Laboral', 'Ingenieria de Sonido'],
         type: 'secondProject',
         modalContent: {
             title: "Práctica universitaria en el ISO",
-            description: `Desarrollo y calibración de software para pruebas auditivas, ajustes en sistemas sonoros y participación en experimentos de localización sonora. Fortalecí habilidades en acústica, programación y psicoacústica, aplicando la Ingeniería de Sonido en entornos clínicos e investigativos.`,
+            description: `Durante mi práctica profesional en el ISO (Instituto Superior de Otorrinolaringología), desde septiembre a noviembre del 2024, trabajé en el desarrollo y calibración de software para pruebas auditivas, realicé ajustes en sistemas de reproducción sonora y participé en experimentos de localización sonora bajo condiciones controladas. Esta experiencia me permitió aplicar conocimientos en acústica, programación y psicoacústica, además de optimizar recursos para garantizar datos confiables.
+        Fue una etapa importante para afianzar habilidades técnicas y comprender la relevancia de la Ingeniería de Sonido en el ámbito clínico y de investigación.`,
             images: [iso1, iso2, iso3, iso4],  // Usa un array con varias imágenes
             pdfUrl: "",
             iframeUrl: null,
